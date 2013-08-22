@@ -3,8 +3,8 @@
 require_once "ShareMyPlaylists.php";
 
 // public と privateのキー
-$public = "{kfhIYS6oLegNBN41wjwVsQKPmCyJhuKC}";
-$private = "{pJevp9kOnvRImFW1}";
+$public = "kfhIYS6oLegNBN41wjwVsQKPmCyJhuKC";
+$private = "pJevp9kOnvRImFW1";
 
 $smp = new ShareMyPlaylists_Api($public, $private);
 
@@ -20,3 +20,4 @@ if( !empty($playlist) )
 {
 	print "<a class=\"image\" href=\"\"><img src=\"".$playlist["image_l"]."\" /></a>";
 }
+
