@@ -25,8 +25,15 @@
     UIImage *backgroundImage = [UIImage imageNamed:@"bg.png"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
+    //　ステータスバ設定
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;
 
+    
+    
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {

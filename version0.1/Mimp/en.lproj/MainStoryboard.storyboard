@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="626" y="-100"/>
+            <point key="canvasLocation" x="128" y="-12"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="lec-yO-XI7">
@@ -88,25 +88,101 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zhb-Na-Kfm"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ezR-Bh-GY5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="548" id="Xzu-EG-T4j"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="sH2-l5-dki" id="99h-at-1Om"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Zhb-Na-Kfm" firstAttribute="trailing" secondItem="n1r-kw-zVP" secondAttribute="trailing" type="default" id="4uP-If-RRK"/>
-                            <constraint firstItem="Zhb-Na-Kfm" firstAttribute="top" secondItem="n1r-kw-zVP" secondAttribute="top" type="default" id="BAy-os-3II"/>
-                            <constraint firstItem="Zhb-Na-Kfm" firstAttribute="bottom" secondItem="n1r-kw-zVP" secondAttribute="bottom" type="default" id="Gyu-kp-mjp"/>
-                            <constraint firstItem="Zhb-Na-Kfm" firstAttribute="leading" secondItem="n1r-kw-zVP" secondAttribute="leading" type="default" id="Ujh-Ol-KmC"/>
+                            <constraint firstItem="ezR-Bh-GY5" firstAttribute="bottom" secondItem="n1r-kw-zVP" secondAttribute="bottom" type="default" id="9oz-i2-btD"/>
+                            <constraint firstItem="ezR-Bh-GY5" firstAttribute="leading" secondItem="n1r-kw-zVP" secondAttribute="leading" type="default" id="Xqs-LG-pyz"/>
+                            <constraint firstItem="ezR-Bh-GY5" firstAttribute="trailing" secondItem="n1r-kw-zVP" secondAttribute="trailing" type="default" id="ubn-6v-9Ze"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZBP-d8-mht"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tda-Q8-lt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134" y="-100"/>
+            <point key="canvasLocation" x="642" y="-12"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eFy-GP-baj">
+            <objects>
+                <viewController id="dbP-EW-dW6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BW8-HD-ElT">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f05-Bc-YyC">
+                                <items>
+                                    <navigationItem title="Title" id="wsO-PC-6EX">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="fz3-w6-T6T"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="uwI-EK-f0k">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="9S8-l6-1O5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66c-EJ-j3i">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="AAZ-BK-03b"/>
+                                    <constraint firstAttribute="height" constant="128" id="fFK-tw-sOI"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cer-bd-P4H">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="L4D-Gb-bsh"/>
+                                    <constraint firstAttribute="height" constant="282" id="je4-AR-eZz"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YoS-Yu-Rdv">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gS8-E1-56a">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f05-Bc-YyC" firstAttribute="leading" secondItem="BW8-HD-ElT" secondAttribute="leading" type="default" id="0PM-nD-62y"/>
+                            <constraint firstItem="uwI-EK-f0k" firstAttribute="top" secondItem="f05-Bc-YyC" secondAttribute="bottom" type="default" id="0re-g3-xD6"/>
+                            <constraint firstItem="66c-EJ-j3i" firstAttribute="top" secondItem="BW8-HD-ElT" secondAttribute="top" constant="116" id="C25-bx-p2S"/>
+                            <constraint firstItem="f05-Bc-YyC" firstAttribute="top" secondItem="BW8-HD-ElT" secondAttribute="top" type="default" id="GAa-W4-jbJ"/>
+                            <constraint firstItem="uwI-EK-f0k" firstAttribute="leading" secondItem="BW8-HD-ElT" secondAttribute="leading" type="default" id="KhA-ry-7fb"/>
+                            <constraint firstItem="66c-EJ-j3i" firstAttribute="centerX" secondItem="f05-Bc-YyC" secondAttribute="centerX" type="default" id="P7w-Hl-p7B"/>
+                            <constraint firstItem="f05-Bc-YyC" firstAttribute="trailing" secondItem="BW8-HD-ElT" secondAttribute="trailing" type="default" id="VXQ-26-mFl"/>
+                            <constraint firstItem="uwI-EK-f0k" firstAttribute="trailing" secondItem="BW8-HD-ElT" secondAttribute="trailing" type="default" id="cqb-oq-esK"/>
+                            <constraint firstItem="Cer-bd-P4H" firstAttribute="leading" secondItem="BW8-HD-ElT" secondAttribute="leading" constant="86" id="eye-Pg-gMc"/>
+                            <constraint firstItem="Cer-bd-P4H" firstAttribute="top" secondItem="BW8-HD-ElT" secondAttribute="top" constant="290" id="jQ3-rr-jT7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8t-nO-C4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173" y="-7"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wFj-N4-7Te">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9RZ-Yq-Xpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="1nM-6D-dE6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ibt-G0-g1P">
@@ -118,17 +194,20 @@
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="EWf-Im-Dnb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9RZ-Yq-Xpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="-100"/>
+            <point key="canvasLocation" x="-402" y="-12"/>
         </scene>
     </scenes>
     <resources>
         <image name="facebook_login.png" width="265" height="50"/>
+        <image name="photo.JPG" width="640" height="520"/>
     </resources>
     <classes>
         <class className="MapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="stepperValuechanged:"/>
+            </relationships>
         </class>
         <class className="MimpViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MimpViewController.h"/>
@@ -140,6 +219,15 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

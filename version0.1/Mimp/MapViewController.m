@@ -7,15 +7,16 @@
 //
 
 #import "MapViewController.h"
-
-
+#import "CustomAnnotation.h"
 
 
 @interface MapViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation MapViewController {
+    IBOutlet MKMapView* __weak map_; // connect IBOutlet and delegate in Interface Builder
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,8 +24,13 @@
     if (self) {
         // Custom initialization
     }
+    
+    _mapView.delegate = self;
+    
     return self;
 }
+
+
 
 - (void)viewDidLoad
 {
@@ -39,6 +45,9 @@
     [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     //　ステータスバ設定
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;
+    
+    
+
 
     // 地図の表示
     _mapView = [[MKMapView alloc] init];
@@ -52,7 +61,40 @@
                             forKeyPath:@"location"
                                options:0
                                context:NULL];
+
+    // 
+    [_mapView addAnnotation:
+    [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.685623,139.763153)
+                                                    title:@"Action Playlist"
+                                                 subtitle:@"Action"]];
+    [_mapView addAnnotation:
+    [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.690747,139.756866)
+                                                    title:@"ROCK'N ROLL"
+                                                 subtitle:@"Rock"]];
+    [_mapView addAnnotation:
+    [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.681666,139.764869)
+                                                    title:@"Mr. Bean"
+                                                 subtitle:@"Comedy"]];
+    
 }
+
+- (MKAnnotationView*)mapView:(MKMapView*)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    
+    MKAnnotationView *annotationView;
+    NSString* identifier = @"Pin";
+    annotationView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    if(nil == annotationView) {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+    }
+    annotationView.image = [UIImage imageNamed:@"map.png"];
+    annotationView.canShowCallout = YES;
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    annotationView.annotation = annotation;
+    
+    return annotationView;  
+}
+
+
 
 
 
@@ -73,6 +115,8 @@
     // 一度しか更新しない場合はremoveする必要、これを設定すると中心を変えられる
     [_mapView.userLocation removeObserver:self forKeyPath:@"location"];
 }
+
+
 
 
 /**
@@ -98,19 +142,6 @@
 	CLLocationCoordinate2D _location;
 	_location.latitude = latitude;
 	_location.longitude = longitude;
-    
-//    CLLocationCoordinate2D location1;
-//	MyAnnotation *annotation;
-//    
-//	location1.latitude = _location.latitude+0.1;
-//	location1.longitude  = _location.longitude+0.1;
-//	annotation =[[MyAnnotation alloc] initWithCoordinate:location1];
-//	[_mapView addAnnotation:annotation];
-//    
-//	location1.latitude = _location.latitude+0.5;
-//	location1.longitude  = _location.longitude+0.5;
-//	annotation =[[MyAnnotation alloc] initWithCoordinate:location1];
-//	[_mapView addAnnotation:annotation];
 }
 
 
@@ -120,6 +151,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)stepperValuechanged:(id)sender {
+    
+}
 @end
 
 
