@@ -7,6 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E419A4D417CAE4760004FD92 /* SelectJanreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A4D317CAE4760004FD92 /* SelectJanreViewController.m */; };
+		E419A50F17CAF7CF0004FD92 /* genre-action.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4D517CAF7CF0004FD92 /* genre-action.jpg */; };
+		E419A51017CAF7CF0004FD92 /* genre-alternative.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4D617CAF7CF0004FD92 /* genre-alternative.jpg */; };
+		E419A51117CAF7CF0004FD92 /* genre-animation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4D717CAF7CF0004FD92 /* genre-animation.jpg */; };
+		E419A51217CAF7CF0004FD92 /* genre-blues.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4D817CAF7CF0004FD92 /* genre-blues.jpg */; };
+		E419A51317CAF7CF0004FD92 /* genre-books.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4D917CAF7CF0004FD92 /* genre-books.jpg */; };
+		E419A51417CAF7CF0004FD92 /* genre-business.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4DA17CAF7CF0004FD92 /* genre-business.jpg */; };
+		E419A51517CAF7CF0004FD92 /* genre-childrens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4DB17CAF7CF0004FD92 /* genre-childrens.jpg */; };
+		E419A51617CAF7CF0004FD92 /* genre-christian.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4DC17CAF7CF0004FD92 /* genre-christian.jpg */; };
+		E419A51717CAF7CF0004FD92 /* genre-classic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4DD17CAF7CF0004FD92 /* genre-classic.jpg */; };
+		E419A51817CAF7CF0004FD92 /* genre-classical.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4DE17CAF7CF0004FD92 /* genre-classical.jpg */; };
+		E419A51917CAF7CF0004FD92 /* genre-classics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4DF17CAF7CF0004FD92 /* genre-classics.jpg */; };
+		E419A51A17CAF7CF0004FD92 /* genre-classicT.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E017CAF7CF0004FD92 /* genre-classicT.jpg */; };
+		E419A51B17CAF7CF0004FD92 /* genre-comedy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E117CAF7CF0004FD92 /* genre-comedy.jpg */; };
+		E419A51C17CAF7CF0004FD92 /* genre-country.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E217CAF7CF0004FD92 /* genre-country.jpg */; };
+		E419A51D17CAF7CF0004FD92 /* genre-dance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E317CAF7CF0004FD92 /* genre-dance.jpg */; };
+		E419A51E17CAF7CF0004FD92 /* genre-documentary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E417CAF7CF0004FD92 /* genre-documentary.jpg */; };
+		E419A51F17CAF7CF0004FD92 /* genre-drama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E517CAF7CF0004FD92 /* genre-drama.jpg */; };
+		E419A52017CAF7CF0004FD92 /* genre-education.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E617CAF7CF0004FD92 /* genre-education.jpg */; };
+		E419A52117CAF7CF0004FD92 /* genre-electronic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E717CAF7CF0004FD92 /* genre-electronic.jpg */; };
+		E419A52217CAF7CF0004FD92 /* genre-engineering.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E817CAF7CF0004FD92 /* genre-engineering.jpg */; };
+		E419A52317CAF7CF0004FD92 /* genre-finearts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4E917CAF7CF0004FD92 /* genre-finearts.jpg */; };
+		E419A52417CAF7CF0004FD92 /* genre-folk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4EA17CAF7CF0004FD92 /* genre-folk.jpg */; };
+		E419A52517CAF7CF0004FD92 /* genre-health.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4EB17CAF7CF0004FD92 /* genre-health.jpg */; };
+		E419A52617CAF7CF0004FD92 /* genre-hiphop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4EC17CAF7CF0004FD92 /* genre-hiphop.jpg */; };
+		E419A52717CAF7CF0004FD92 /* genre-history.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4ED17CAF7CF0004FD92 /* genre-history.jpg */; };
+		E419A52817CAF7CF0004FD92 /* genre-holiday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4EE17CAF7CF0004FD92 /* genre-holiday.jpg */; };
+		E419A52917CAF7CF0004FD92 /* genre-horror.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4EF17CAF7CF0004FD92 /* genre-horror.jpg */; };
+		E419A52A17CAF7CF0004FD92 /* genre-humanities.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F017CAF7CF0004FD92 /* genre-humanities.jpg */; };
+		E419A52B17CAF7CF0004FD92 /* genre-independent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F117CAF7CF0004FD92 /* genre-independent.jpg */; };
+		E419A52C17CAF7CF0004FD92 /* genre-jazz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F217CAF7CF0004FD92 /* genre-jazz.jpg */; };
+		E419A52D17CAF7CF0004FD92 /* genre-jpop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F317CAF7CF0004FD92 /* genre-jpop.jpg */; };
+		E419A52E17CAF7CF0004FD92 /* genre-kayokyoku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F417CAF7CF0004FD92 /* genre-kayokyoku.jpg */; };
+		E419A52F17CAF7CF0004FD92 /* genre-kids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F517CAF7CF0004FD92 /* genre-kids.jpg */; };
+		E419A53017CAF7CF0004FD92 /* genre-language.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F617CAF7CF0004FD92 /* genre-language.jpg */; };
+		E419A53117CAF7CF0004FD92 /* genre-latin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F717CAF7CF0004FD92 /* genre-latin.jpg */; };
+		E419A53217CAF7CF0004FD92 /* genre-literature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F817CAF7CF0004FD92 /* genre-literature.jpg */; };
+		E419A53317CAF7CF0004FD92 /* genre-mathematics.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4F917CAF7CF0004FD92 /* genre-mathematics.jpg */; };
+		E419A53417CAF7CF0004FD92 /* genre-music.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4FA17CAF7CF0004FD92 /* genre-music.jpg */; };
+		E419A53517CAF7CF0004FD92 /* genre-newage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4FB17CAF7CF0004FD92 /* genre-newage.jpg */; };
+		E419A53617CAF7CF0004FD92 /* genre-nonfiction.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4FC17CAF7CF0004FD92 /* genre-nonfiction.jpg */; };
+		E419A53717CAF7CF0004FD92 /* genre-pop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4FD17CAF7CF0004FD92 /* genre-pop.jpg */; };
+		E419A53817CAF7CF0004FD92 /* genre-rb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4FE17CAF7CF0004FD92 /* genre-rb.jpg */; };
+		E419A53917CAF7CF0004FD92 /* genre-reality.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A4FF17CAF7CF0004FD92 /* genre-reality.jpg */; };
+		E419A53A17CAF7CF0004FD92 /* genre-reggae.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50017CAF7CF0004FD92 /* genre-reggae.jpg */; };
+		E419A53B17CAF7CF0004FD92 /* genre-rock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50117CAF7CF0004FD92 /* genre-rock.jpg */; };
+		E419A53C17CAF7CF0004FD92 /* genre-romance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50217CAF7CF0004FD92 /* genre-romance.jpg */; };
+		E419A53D17CAF7CF0004FD92 /* genre-science.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50317CAF7CF0004FD92 /* genre-science.jpg */; };
+		E419A53E17CAF7CF0004FD92 /* genre-scifi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50417CAF7CF0004FD92 /* genre-scifi.jpg */; };
+		E419A53F17CAF7CF0004FD92 /* genre-shortfilms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50517CAF7CF0004FD92 /* genre-shortfilms.jpg */; };
+		E419A54017CAF7CF0004FD92 /* genre-socialScience.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50617CAF7CF0004FD92 /* genre-socialScience.jpg */; };
+		E419A54117CAF7CF0004FD92 /* genre-soundtrack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50717CAF7CF0004FD92 /* genre-soundtrack.jpg */; };
+		E419A54217CAF7CF0004FD92 /* genre-spoken.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50817CAF7CF0004FD92 /* genre-spoken.jpg */; };
+		E419A54317CAF7CF0004FD92 /* genre-sports.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50917CAF7CF0004FD92 /* genre-sports.jpg */; };
+		E419A54417CAF7CF0004FD92 /* genre-teens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50A17CAF7CF0004FD92 /* genre-teens.jpg */; };
+		E419A54517CAF7CF0004FD92 /* genre-thriller.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50B17CAF7CF0004FD92 /* genre-thriller.jpg */; };
+		E419A54617CAF7CF0004FD92 /* genre-vocal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50C17CAF7CF0004FD92 /* genre-vocal.jpg */; };
+		E419A54717CAF7CF0004FD92 /* genre-western.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50D17CAF7CF0004FD92 /* genre-western.jpg */; };
+		E419A54817CAF7CF0004FD92 /* genre-world.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A50E17CAF7CF0004FD92 /* genre-world.jpg */; };
+		E419A54B17CB19800004FD92 /* unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = E419A54917CB19800004FD92 /* unchecked.png */; };
+		E419A54C17CB19800004FD92 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = E419A54A17CB19800004FD92 /* checked.png */; };
+		E419A54E17CB1AD20004FD92 /* checked.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E419A54D17CB1AD20004FD92 /* checked.jpg */; };
+		E419A57617CB1C400004FD92 /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A55317CB1C400004FD92 /* FUIAlertView.m */; };
+		E419A57717CB1C400004FD92 /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A55517CB1C400004FD92 /* FUIButton.m */; };
+		E419A57817CB1C400004FD92 /* FUICellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A55717CB1C400004FD92 /* FUICellBackgroundView.m */; };
+		E419A57917CB1C400004FD92 /* FUIPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A55917CB1C400004FD92 /* FUIPopoverBackgroundView.m */; };
+		E419A57A17CB1C400004FD92 /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A55B17CB1C400004FD92 /* FUISegmentedControl.m */; };
+		E419A57B17CB1C400004FD92 /* FUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A55D17CB1C400004FD92 /* FUISwitch.m */; };
+		E419A57C17CB1C400004FD92 /* UIBarButtonItem+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A55F17CB1C400004FD92 /* UIBarButtonItem+FlatUI.m */; };
+		E419A57D17CB1C400004FD92 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A56117CB1C400004FD92 /* UIColor+FlatUI.m */; };
+		E419A57E17CB1C400004FD92 /* UIFont+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A56317CB1C400004FD92 /* UIFont+FlatUI.m */; };
+		E419A57F17CB1C400004FD92 /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A56517CB1C400004FD92 /* UIImage+FlatUI.m */; };
+		E419A58017CB1C400004FD92 /* UINavigationBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A56717CB1C400004FD92 /* UINavigationBar+FlatUI.m */; };
+		E419A58117CB1C400004FD92 /* UIPopoverController+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A56917CB1C400004FD92 /* UIPopoverController+FlatUI.m */; };
+		E419A58217CB1C400004FD92 /* UIProgressView+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A56B17CB1C400004FD92 /* UIProgressView+FlatUI.m */; };
+		E419A58317CB1C400004FD92 /* UISlider+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A56D17CB1C400004FD92 /* UISlider+FlatUI.m */; };
+		E419A58417CB1C400004FD92 /* UIStepper+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A56F17CB1C400004FD92 /* UIStepper+FlatUI.m */; };
+		E419A58517CB1C400004FD92 /* UITabBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A57117CB1C400004FD92 /* UITabBar+FlatUI.m */; };
+		E419A58617CB1C400004FD92 /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A57317CB1C400004FD92 /* UITableViewCell+FlatUI.m */; };
+		E419A58717CB1C400004FD92 /* UIToolbar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = E419A57517CB1C400004FD92 /* UIToolbar+FlatUI.m */; };
+		E419A59317CB1C490004FD92 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A58917CB1C490004FD92 /* Lato-Black.ttf */; };
+		E419A59417CB1C490004FD92 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A58A17CB1C490004FD92 /* Lato-BlackItalic.ttf */; };
+		E419A59517CB1C490004FD92 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A58B17CB1C490004FD92 /* Lato-Bold.ttf */; };
+		E419A59617CB1C490004FD92 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A58C17CB1C490004FD92 /* Lato-BoldItalic.ttf */; };
+		E419A59717CB1C490004FD92 /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A58D17CB1C490004FD92 /* Lato-Hairline.ttf */; };
+		E419A59817CB1C490004FD92 /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A58E17CB1C490004FD92 /* Lato-HairlineItalic.ttf */; };
+		E419A59917CB1C490004FD92 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A58F17CB1C490004FD92 /* Lato-Italic.ttf */; };
+		E419A59A17CB1C490004FD92 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A59017CB1C490004FD92 /* Lato-Light.ttf */; };
+		E419A59B17CB1C490004FD92 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A59117CB1C490004FD92 /* Lato-LightItalic.ttf */; };
+		E419A59C17CB1C490004FD92 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E419A59217CB1C490004FD92 /* Lato-Regular.ttf */; };
+		E419A59E17CB1C600004FD92 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E419A59D17CB1C600004FD92 /* CoreText.framework */; };
+		E41FB14917C6FF6B005CAC08 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FB14817C6FF6B005CAC08 /* HomeViewController.m */; };
+		E41FB14C17C6FF84005CAC08 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FB14B17C6FF84005CAC08 /* EmailViewController.m */; };
+		E41FB14F17C71E9B005CAC08 /* PlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FB14E17C71E9B005CAC08 /* PlaylistViewController.m */; };
+		E41FB15217C71EAB005CAC08 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41FB15117C71EAB005CAC08 /* ArtistViewController.m */; };
+		E43C8FE017C733D50059F811 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43C8FDF17C733D40059F811 /* SampleViewController.m */; };
+		E445186F17CA8586000393F4 /* JanreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E445186E17CA8586000393F4 /* JanreTableViewCell.m */; };
+		E445187317CA85A1000393F4 /* ArtistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E445187217CA85A1000393F4 /* ArtistTableViewCell.m */; };
+		E445187617CA8A87000393F4 /* JanreIndexedCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E445187517CA8A87000393F4 /* JanreIndexedCollectionView.m */; };
+		E4C8B81D17C757C8009E7AF3 /* checkbox-checked.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C8B81B17C757C8009E7AF3 /* checkbox-checked.png */; };
+		E4C8B81E17C757C8009E7AF3 /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C8B81C17C757C8009E7AF3 /* checkbox.png */; };
 		F4EECF12177C99F400778578 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF11177C99F400778578 /* UIKit.framework */; };
 		F4EECF14177C99F400778578 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF13177C99F400778578 /* Foundation.framework */; };
 		F4EECF16177C99F400778578 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EECF15177C99F400778578 /* CoreGraphics.framework */; };
@@ -43,6 +144,135 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E419A4D217CAE4760004FD92 /* SelectJanreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectJanreViewController.h; sourceTree = "<group>"; };
+		E419A4D317CAE4760004FD92 /* SelectJanreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectJanreViewController.m; sourceTree = "<group>"; };
+		E419A4D517CAF7CF0004FD92 /* genre-action.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-action.jpg"; sourceTree = "<group>"; };
+		E419A4D617CAF7CF0004FD92 /* genre-alternative.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-alternative.jpg"; sourceTree = "<group>"; };
+		E419A4D717CAF7CF0004FD92 /* genre-animation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-animation.jpg"; sourceTree = "<group>"; };
+		E419A4D817CAF7CF0004FD92 /* genre-blues.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-blues.jpg"; sourceTree = "<group>"; };
+		E419A4D917CAF7CF0004FD92 /* genre-books.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-books.jpg"; sourceTree = "<group>"; };
+		E419A4DA17CAF7CF0004FD92 /* genre-business.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-business.jpg"; sourceTree = "<group>"; };
+		E419A4DB17CAF7CF0004FD92 /* genre-childrens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-childrens.jpg"; sourceTree = "<group>"; };
+		E419A4DC17CAF7CF0004FD92 /* genre-christian.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-christian.jpg"; sourceTree = "<group>"; };
+		E419A4DD17CAF7CF0004FD92 /* genre-classic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-classic.jpg"; sourceTree = "<group>"; };
+		E419A4DE17CAF7CF0004FD92 /* genre-classical.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-classical.jpg"; sourceTree = "<group>"; };
+		E419A4DF17CAF7CF0004FD92 /* genre-classics.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-classics.jpg"; sourceTree = "<group>"; };
+		E419A4E017CAF7CF0004FD92 /* genre-classicT.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-classicT.jpg"; sourceTree = "<group>"; };
+		E419A4E117CAF7CF0004FD92 /* genre-comedy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-comedy.jpg"; sourceTree = "<group>"; };
+		E419A4E217CAF7CF0004FD92 /* genre-country.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-country.jpg"; sourceTree = "<group>"; };
+		E419A4E317CAF7CF0004FD92 /* genre-dance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-dance.jpg"; sourceTree = "<group>"; };
+		E419A4E417CAF7CF0004FD92 /* genre-documentary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-documentary.jpg"; sourceTree = "<group>"; };
+		E419A4E517CAF7CF0004FD92 /* genre-drama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-drama.jpg"; sourceTree = "<group>"; };
+		E419A4E617CAF7CF0004FD92 /* genre-education.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-education.jpg"; sourceTree = "<group>"; };
+		E419A4E717CAF7CF0004FD92 /* genre-electronic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-electronic.jpg"; sourceTree = "<group>"; };
+		E419A4E817CAF7CF0004FD92 /* genre-engineering.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-engineering.jpg"; sourceTree = "<group>"; };
+		E419A4E917CAF7CF0004FD92 /* genre-finearts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-finearts.jpg"; sourceTree = "<group>"; };
+		E419A4EA17CAF7CF0004FD92 /* genre-folk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-folk.jpg"; sourceTree = "<group>"; };
+		E419A4EB17CAF7CF0004FD92 /* genre-health.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-health.jpg"; sourceTree = "<group>"; };
+		E419A4EC17CAF7CF0004FD92 /* genre-hiphop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-hiphop.jpg"; sourceTree = "<group>"; };
+		E419A4ED17CAF7CF0004FD92 /* genre-history.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-history.jpg"; sourceTree = "<group>"; };
+		E419A4EE17CAF7CF0004FD92 /* genre-holiday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-holiday.jpg"; sourceTree = "<group>"; };
+		E419A4EF17CAF7CF0004FD92 /* genre-horror.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-horror.jpg"; sourceTree = "<group>"; };
+		E419A4F017CAF7CF0004FD92 /* genre-humanities.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-humanities.jpg"; sourceTree = "<group>"; };
+		E419A4F117CAF7CF0004FD92 /* genre-independent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-independent.jpg"; sourceTree = "<group>"; };
+		E419A4F217CAF7CF0004FD92 /* genre-jazz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-jazz.jpg"; sourceTree = "<group>"; };
+		E419A4F317CAF7CF0004FD92 /* genre-jpop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-jpop.jpg"; sourceTree = "<group>"; };
+		E419A4F417CAF7CF0004FD92 /* genre-kayokyoku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-kayokyoku.jpg"; sourceTree = "<group>"; };
+		E419A4F517CAF7CF0004FD92 /* genre-kids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-kids.jpg"; sourceTree = "<group>"; };
+		E419A4F617CAF7CF0004FD92 /* genre-language.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-language.jpg"; sourceTree = "<group>"; };
+		E419A4F717CAF7CF0004FD92 /* genre-latin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-latin.jpg"; sourceTree = "<group>"; };
+		E419A4F817CAF7CF0004FD92 /* genre-literature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-literature.jpg"; sourceTree = "<group>"; };
+		E419A4F917CAF7CF0004FD92 /* genre-mathematics.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-mathematics.jpg"; sourceTree = "<group>"; };
+		E419A4FA17CAF7CF0004FD92 /* genre-music.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-music.jpg"; sourceTree = "<group>"; };
+		E419A4FB17CAF7CF0004FD92 /* genre-newage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-newage.jpg"; sourceTree = "<group>"; };
+		E419A4FC17CAF7CF0004FD92 /* genre-nonfiction.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-nonfiction.jpg"; sourceTree = "<group>"; };
+		E419A4FD17CAF7CF0004FD92 /* genre-pop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-pop.jpg"; sourceTree = "<group>"; };
+		E419A4FE17CAF7CF0004FD92 /* genre-rb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-rb.jpg"; sourceTree = "<group>"; };
+		E419A4FF17CAF7CF0004FD92 /* genre-reality.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-reality.jpg"; sourceTree = "<group>"; };
+		E419A50017CAF7CF0004FD92 /* genre-reggae.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-reggae.jpg"; sourceTree = "<group>"; };
+		E419A50117CAF7CF0004FD92 /* genre-rock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-rock.jpg"; sourceTree = "<group>"; };
+		E419A50217CAF7CF0004FD92 /* genre-romance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-romance.jpg"; sourceTree = "<group>"; };
+		E419A50317CAF7CF0004FD92 /* genre-science.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-science.jpg"; sourceTree = "<group>"; };
+		E419A50417CAF7CF0004FD92 /* genre-scifi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-scifi.jpg"; sourceTree = "<group>"; };
+		E419A50517CAF7CF0004FD92 /* genre-shortfilms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-shortfilms.jpg"; sourceTree = "<group>"; };
+		E419A50617CAF7CF0004FD92 /* genre-socialScience.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-socialScience.jpg"; sourceTree = "<group>"; };
+		E419A50717CAF7CF0004FD92 /* genre-soundtrack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-soundtrack.jpg"; sourceTree = "<group>"; };
+		E419A50817CAF7CF0004FD92 /* genre-spoken.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-spoken.jpg"; sourceTree = "<group>"; };
+		E419A50917CAF7CF0004FD92 /* genre-sports.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-sports.jpg"; sourceTree = "<group>"; };
+		E419A50A17CAF7CF0004FD92 /* genre-teens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-teens.jpg"; sourceTree = "<group>"; };
+		E419A50B17CAF7CF0004FD92 /* genre-thriller.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-thriller.jpg"; sourceTree = "<group>"; };
+		E419A50C17CAF7CF0004FD92 /* genre-vocal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-vocal.jpg"; sourceTree = "<group>"; };
+		E419A50D17CAF7CF0004FD92 /* genre-western.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-western.jpg"; sourceTree = "<group>"; };
+		E419A50E17CAF7CF0004FD92 /* genre-world.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "genre-world.jpg"; sourceTree = "<group>"; };
+		E419A54917CB19800004FD92 /* unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked.png; sourceTree = "<group>"; };
+		E419A54A17CB19800004FD92 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		E419A54D17CB1AD20004FD92 /* checked.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checked.jpg; sourceTree = "<group>"; };
+		E419A55117CB1C400004FD92 /* FlatUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIKit.h; sourceTree = "<group>"; };
+		E419A55217CB1C400004FD92 /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
+		E419A55317CB1C400004FD92 /* FUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIAlertView.m; sourceTree = "<group>"; };
+		E419A55417CB1C400004FD92 /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
+		E419A55517CB1C400004FD92 /* FUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIButton.m; sourceTree = "<group>"; };
+		E419A55617CB1C400004FD92 /* FUICellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUICellBackgroundView.h; sourceTree = "<group>"; };
+		E419A55717CB1C400004FD92 /* FUICellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUICellBackgroundView.m; sourceTree = "<group>"; };
+		E419A55817CB1C400004FD92 /* FUIPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIPopoverBackgroundView.h; sourceTree = "<group>"; };
+		E419A55917CB1C400004FD92 /* FUIPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIPopoverBackgroundView.m; sourceTree = "<group>"; };
+		E419A55A17CB1C400004FD92 /* FUISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISegmentedControl.h; sourceTree = "<group>"; };
+		E419A55B17CB1C400004FD92 /* FUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISegmentedControl.m; sourceTree = "<group>"; };
+		E419A55C17CB1C400004FD92 /* FUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISwitch.h; sourceTree = "<group>"; };
+		E419A55D17CB1C400004FD92 /* FUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISwitch.m; sourceTree = "<group>"; };
+		E419A55E17CB1C400004FD92 /* UIBarButtonItem+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FlatUI.h"; sourceTree = "<group>"; };
+		E419A55F17CB1C400004FD92 /* UIBarButtonItem+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FlatUI.m"; sourceTree = "<group>"; };
+		E419A56017CB1C400004FD92 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
+		E419A56117CB1C400004FD92 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+		E419A56217CB1C400004FD92 /* UIFont+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FlatUI.h"; sourceTree = "<group>"; };
+		E419A56317CB1C400004FD92 /* UIFont+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FlatUI.m"; sourceTree = "<group>"; };
+		E419A56417CB1C400004FD92 /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
+		E419A56517CB1C400004FD92 /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
+		E419A56617CB1C400004FD92 /* UINavigationBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+FlatUI.h"; sourceTree = "<group>"; };
+		E419A56717CB1C400004FD92 /* UINavigationBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+FlatUI.m"; sourceTree = "<group>"; };
+		E419A56817CB1C400004FD92 /* UIPopoverController+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+FlatUI.h"; sourceTree = "<group>"; };
+		E419A56917CB1C400004FD92 /* UIPopoverController+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+FlatUI.m"; sourceTree = "<group>"; };
+		E419A56A17CB1C400004FD92 /* UIProgressView+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+FlatUI.h"; sourceTree = "<group>"; };
+		E419A56B17CB1C400004FD92 /* UIProgressView+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+FlatUI.m"; sourceTree = "<group>"; };
+		E419A56C17CB1C400004FD92 /* UISlider+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+FlatUI.h"; sourceTree = "<group>"; };
+		E419A56D17CB1C400004FD92 /* UISlider+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+FlatUI.m"; sourceTree = "<group>"; };
+		E419A56E17CB1C400004FD92 /* UIStepper+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStepper+FlatUI.h"; sourceTree = "<group>"; };
+		E419A56F17CB1C400004FD92 /* UIStepper+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStepper+FlatUI.m"; sourceTree = "<group>"; };
+		E419A57017CB1C400004FD92 /* UITabBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+FlatUI.h"; sourceTree = "<group>"; };
+		E419A57117CB1C400004FD92 /* UITabBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FlatUI.m"; sourceTree = "<group>"; };
+		E419A57217CB1C400004FD92 /* UITableViewCell+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+FlatUI.h"; sourceTree = "<group>"; };
+		E419A57317CB1C400004FD92 /* UITableViewCell+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FlatUI.m"; sourceTree = "<group>"; };
+		E419A57417CB1C400004FD92 /* UIToolbar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+FlatUI.h"; sourceTree = "<group>"; };
+		E419A57517CB1C400004FD92 /* UIToolbar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+FlatUI.m"; sourceTree = "<group>"; };
+		E419A58917CB1C490004FD92 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		E419A58A17CB1C490004FD92 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E419A58B17CB1C490004FD92 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		E419A58C17CB1C490004FD92 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E419A58D17CB1C490004FD92 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		E419A58E17CB1C490004FD92 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		E419A58F17CB1C490004FD92 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		E419A59017CB1C490004FD92 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		E419A59117CB1C490004FD92 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		E419A59217CB1C490004FD92 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		E419A59D17CB1C600004FD92 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E41FB14717C6FF6B005CAC08 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E41FB14817C6FF6B005CAC08 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E41FB14A17C6FF84005CAC08 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		E41FB14B17C6FF84005CAC08 /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
+		E41FB14D17C71E9B005CAC08 /* PlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistViewController.h; sourceTree = "<group>"; };
+		E41FB14E17C71E9B005CAC08 /* PlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistViewController.m; sourceTree = "<group>"; };
+		E41FB15017C71EAB005CAC08 /* ArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistViewController.h; sourceTree = "<group>"; };
+		E41FB15117C71EAB005CAC08 /* ArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistViewController.m; sourceTree = "<group>"; };
+		E43C8FDE17C733D40059F811 /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		E43C8FDF17C733D40059F811 /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		E445186D17CA8586000393F4 /* JanreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JanreTableViewCell.h; sourceTree = "<group>"; };
+		E445186E17CA8586000393F4 /* JanreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JanreTableViewCell.m; sourceTree = "<group>"; };
+		E445187117CA85A1000393F4 /* ArtistTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistTableViewCell.h; sourceTree = "<group>"; };
+		E445187217CA85A1000393F4 /* ArtistTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistTableViewCell.m; sourceTree = "<group>"; };
+		E445187417CA8A87000393F4 /* JanreIndexedCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JanreIndexedCollectionView.h; sourceTree = "<group>"; };
+		E445187517CA8A87000393F4 /* JanreIndexedCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JanreIndexedCollectionView.m; sourceTree = "<group>"; };
+		E4C8B81B17C757C8009E7AF3 /* checkbox-checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-checked.png"; sourceTree = "<group>"; };
+		E4C8B81C17C757C8009E7AF3 /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
 		F4EECF0E177C99F400778578 /* SidebarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EECF11177C99F400778578 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F4EECF13177C99F400778578 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +322,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E419A59E17CB1C600004FD92 /* CoreText.framework in Frameworks */,
 				F4EECF72177FE9BA00778578 /* MapKit.framework in Frameworks */,
 				F4EECF70177FE9B400778578 /* CoreLocation.framework in Frameworks */,
 				F4EECF12177C99F400778578 /* UIKit.framework in Frameworks */,
@@ -103,9 +334,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E419A54F17CB1C400004FD92 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E419A55017CB1C400004FD92 /* ios */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E419A55017CB1C400004FD92 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				E419A55117CB1C400004FD92 /* FlatUIKit.h */,
+				E419A55217CB1C400004FD92 /* FUIAlertView.h */,
+				E419A55317CB1C400004FD92 /* FUIAlertView.m */,
+				E419A55417CB1C400004FD92 /* FUIButton.h */,
+				E419A55517CB1C400004FD92 /* FUIButton.m */,
+				E419A55617CB1C400004FD92 /* FUICellBackgroundView.h */,
+				E419A55717CB1C400004FD92 /* FUICellBackgroundView.m */,
+				E419A55817CB1C400004FD92 /* FUIPopoverBackgroundView.h */,
+				E419A55917CB1C400004FD92 /* FUIPopoverBackgroundView.m */,
+				E419A55A17CB1C400004FD92 /* FUISegmentedControl.h */,
+				E419A55B17CB1C400004FD92 /* FUISegmentedControl.m */,
+				E419A55C17CB1C400004FD92 /* FUISwitch.h */,
+				E419A55D17CB1C400004FD92 /* FUISwitch.m */,
+				E419A55E17CB1C400004FD92 /* UIBarButtonItem+FlatUI.h */,
+				E419A55F17CB1C400004FD92 /* UIBarButtonItem+FlatUI.m */,
+				E419A56017CB1C400004FD92 /* UIColor+FlatUI.h */,
+				E419A56117CB1C400004FD92 /* UIColor+FlatUI.m */,
+				E419A56217CB1C400004FD92 /* UIFont+FlatUI.h */,
+				E419A56317CB1C400004FD92 /* UIFont+FlatUI.m */,
+				E419A56417CB1C400004FD92 /* UIImage+FlatUI.h */,
+				E419A56517CB1C400004FD92 /* UIImage+FlatUI.m */,
+				E419A56617CB1C400004FD92 /* UINavigationBar+FlatUI.h */,
+				E419A56717CB1C400004FD92 /* UINavigationBar+FlatUI.m */,
+				E419A56817CB1C400004FD92 /* UIPopoverController+FlatUI.h */,
+				E419A56917CB1C400004FD92 /* UIPopoverController+FlatUI.m */,
+				E419A56A17CB1C400004FD92 /* UIProgressView+FlatUI.h */,
+				E419A56B17CB1C400004FD92 /* UIProgressView+FlatUI.m */,
+				E419A56C17CB1C400004FD92 /* UISlider+FlatUI.h */,
+				E419A56D17CB1C400004FD92 /* UISlider+FlatUI.m */,
+				E419A56E17CB1C400004FD92 /* UIStepper+FlatUI.h */,
+				E419A56F17CB1C400004FD92 /* UIStepper+FlatUI.m */,
+				E419A57017CB1C400004FD92 /* UITabBar+FlatUI.h */,
+				E419A57117CB1C400004FD92 /* UITabBar+FlatUI.m */,
+				E419A57217CB1C400004FD92 /* UITableViewCell+FlatUI.h */,
+				E419A57317CB1C400004FD92 /* UITableViewCell+FlatUI.m */,
+				E419A57417CB1C400004FD92 /* UIToolbar+FlatUI.h */,
+				E419A57517CB1C400004FD92 /* UIToolbar+FlatUI.m */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		E419A58817CB1C490004FD92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E419A58917CB1C490004FD92 /* Lato-Black.ttf */,
+				E419A58A17CB1C490004FD92 /* Lato-BlackItalic.ttf */,
+				E419A58B17CB1C490004FD92 /* Lato-Bold.ttf */,
+				E419A58C17CB1C490004FD92 /* Lato-BoldItalic.ttf */,
+				E419A58D17CB1C490004FD92 /* Lato-Hairline.ttf */,
+				E419A58E17CB1C490004FD92 /* Lato-HairlineItalic.ttf */,
+				E419A58F17CB1C490004FD92 /* Lato-Italic.ttf */,
+				E419A59017CB1C490004FD92 /* Lato-Light.ttf */,
+				E419A59117CB1C490004FD92 /* Lato-LightItalic.ttf */,
+				E419A59217CB1C490004FD92 /* Lato-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F4EECF05177C99F400778578 = {
 			isa = PBXGroup;
 			children = (
+				E419A59D17CB1C600004FD92 /* CoreText.framework */,
 				F4EECF71177FE9BA00778578 /* MapKit.framework */,
 				F4EECF6F177FE9B400778578 /* CoreLocation.framework */,
 				F4EECF17177C99F400778578 /* SidebarDemo */,
@@ -135,6 +436,8 @@
 		F4EECF17177C99F400778578 /* SidebarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E419A58817CB1C490004FD92 /* Resources */,
+				E419A54F17CB1C400004FD92 /* Classes */,
 				F4EECF20177C99F400778578 /* AppDelegate.h */,
 				F4EECF21177C99F400778578 /* AppDelegate.m */,
 				F4EECF29177C99F400778578 /* MainStoryboard.storyboard */,
@@ -148,6 +451,24 @@
 				F4EECF74177FF90600778578 /* PhotoViewController.m */,
 				F4EECF34177C9A1E00778578 /* Library */,
 				F4EECF18177C99F400778578 /* Supporting Files */,
+				E41FB14717C6FF6B005CAC08 /* HomeViewController.h */,
+				E41FB14817C6FF6B005CAC08 /* HomeViewController.m */,
+				E41FB14A17C6FF84005CAC08 /* EmailViewController.h */,
+				E41FB14B17C6FF84005CAC08 /* EmailViewController.m */,
+				E41FB14D17C71E9B005CAC08 /* PlaylistViewController.h */,
+				E41FB14E17C71E9B005CAC08 /* PlaylistViewController.m */,
+				E41FB15017C71EAB005CAC08 /* ArtistViewController.h */,
+				E41FB15117C71EAB005CAC08 /* ArtistViewController.m */,
+				E43C8FDE17C733D40059F811 /* SampleViewController.h */,
+				E43C8FDF17C733D40059F811 /* SampleViewController.m */,
+				E445186D17CA8586000393F4 /* JanreTableViewCell.h */,
+				E445186E17CA8586000393F4 /* JanreTableViewCell.m */,
+				E445187117CA85A1000393F4 /* ArtistTableViewCell.h */,
+				E445187217CA85A1000393F4 /* ArtistTableViewCell.m */,
+				E445187417CA8A87000393F4 /* JanreIndexedCollectionView.h */,
+				E445187517CA8A87000393F4 /* JanreIndexedCollectionView.m */,
+				E419A4D217CAE4760004FD92 /* SelectJanreViewController.h */,
+				E419A4D317CAE4760004FD92 /* SelectJanreViewController.m */,
 			);
 			path = SidebarDemo;
 			sourceTree = "<group>";
@@ -179,6 +500,69 @@
 		F4EECF53177F37CB00778578 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E419A54D17CB1AD20004FD92 /* checked.jpg */,
+				E419A4D517CAF7CF0004FD92 /* genre-action.jpg */,
+				E419A4D617CAF7CF0004FD92 /* genre-alternative.jpg */,
+				E419A4D717CAF7CF0004FD92 /* genre-animation.jpg */,
+				E419A54917CB19800004FD92 /* unchecked.png */,
+				E419A54A17CB19800004FD92 /* checked.png */,
+				E419A4D817CAF7CF0004FD92 /* genre-blues.jpg */,
+				E419A4D917CAF7CF0004FD92 /* genre-books.jpg */,
+				E419A4DA17CAF7CF0004FD92 /* genre-business.jpg */,
+				E419A4DB17CAF7CF0004FD92 /* genre-childrens.jpg */,
+				E419A4DC17CAF7CF0004FD92 /* genre-christian.jpg */,
+				E419A4DD17CAF7CF0004FD92 /* genre-classic.jpg */,
+				E419A4DE17CAF7CF0004FD92 /* genre-classical.jpg */,
+				E419A4DF17CAF7CF0004FD92 /* genre-classics.jpg */,
+				E419A4E017CAF7CF0004FD92 /* genre-classicT.jpg */,
+				E419A4E117CAF7CF0004FD92 /* genre-comedy.jpg */,
+				E419A4E217CAF7CF0004FD92 /* genre-country.jpg */,
+				E419A4E317CAF7CF0004FD92 /* genre-dance.jpg */,
+				E419A4E417CAF7CF0004FD92 /* genre-documentary.jpg */,
+				E419A4E517CAF7CF0004FD92 /* genre-drama.jpg */,
+				E419A4E617CAF7CF0004FD92 /* genre-education.jpg */,
+				E419A4E717CAF7CF0004FD92 /* genre-electronic.jpg */,
+				E419A4E817CAF7CF0004FD92 /* genre-engineering.jpg */,
+				E419A4E917CAF7CF0004FD92 /* genre-finearts.jpg */,
+				E419A4EA17CAF7CF0004FD92 /* genre-folk.jpg */,
+				E419A4EB17CAF7CF0004FD92 /* genre-health.jpg */,
+				E419A4EC17CAF7CF0004FD92 /* genre-hiphop.jpg */,
+				E419A4ED17CAF7CF0004FD92 /* genre-history.jpg */,
+				E419A4EE17CAF7CF0004FD92 /* genre-holiday.jpg */,
+				E419A4EF17CAF7CF0004FD92 /* genre-horror.jpg */,
+				E419A4F017CAF7CF0004FD92 /* genre-humanities.jpg */,
+				E419A4F117CAF7CF0004FD92 /* genre-independent.jpg */,
+				E419A4F217CAF7CF0004FD92 /* genre-jazz.jpg */,
+				E419A4F317CAF7CF0004FD92 /* genre-jpop.jpg */,
+				E419A4F417CAF7CF0004FD92 /* genre-kayokyoku.jpg */,
+				E419A4F517CAF7CF0004FD92 /* genre-kids.jpg */,
+				E419A4F617CAF7CF0004FD92 /* genre-language.jpg */,
+				E419A4F717CAF7CF0004FD92 /* genre-latin.jpg */,
+				E419A4F817CAF7CF0004FD92 /* genre-literature.jpg */,
+				E419A4F917CAF7CF0004FD92 /* genre-mathematics.jpg */,
+				E419A4FA17CAF7CF0004FD92 /* genre-music.jpg */,
+				E419A4FB17CAF7CF0004FD92 /* genre-newage.jpg */,
+				E419A4FC17CAF7CF0004FD92 /* genre-nonfiction.jpg */,
+				E419A4FD17CAF7CF0004FD92 /* genre-pop.jpg */,
+				E419A4FE17CAF7CF0004FD92 /* genre-rb.jpg */,
+				E419A4FF17CAF7CF0004FD92 /* genre-reality.jpg */,
+				E419A50017CAF7CF0004FD92 /* genre-reggae.jpg */,
+				E419A50117CAF7CF0004FD92 /* genre-rock.jpg */,
+				E419A50217CAF7CF0004FD92 /* genre-romance.jpg */,
+				E419A50317CAF7CF0004FD92 /* genre-science.jpg */,
+				E419A50417CAF7CF0004FD92 /* genre-scifi.jpg */,
+				E419A50517CAF7CF0004FD92 /* genre-shortfilms.jpg */,
+				E419A50617CAF7CF0004FD92 /* genre-socialScience.jpg */,
+				E419A50717CAF7CF0004FD92 /* genre-soundtrack.jpg */,
+				E419A50817CAF7CF0004FD92 /* genre-spoken.jpg */,
+				E419A50917CAF7CF0004FD92 /* genre-sports.jpg */,
+				E419A50A17CAF7CF0004FD92 /* genre-teens.jpg */,
+				E419A50B17CAF7CF0004FD92 /* genre-thriller.jpg */,
+				E419A50C17CAF7CF0004FD92 /* genre-vocal.jpg */,
+				E419A50D17CAF7CF0004FD92 /* genre-western.jpg */,
+				E419A50E17CAF7CF0004FD92 /* genre-world.jpg */,
+				E4C8B81B17C757C8009E7AF3 /* checkbox-checked.png */,
+				E4C8B81C17C757C8009E7AF3 /* checkbox.png */,
 				F4FE87F91780081300CB3DA8 /* comments_photo.jpg */,
 				F4FE87FD178010F000CB3DA8 /* bookmark_photo.jpg */,
 				F4FE8801178010FA00CB3DA8 /* tag_photo.jpg */,
@@ -271,6 +655,79 @@
 				F4FE87FF178010F000CB3DA8 /* bookmark_photo.jpg in Resources */,
 				F4FE8800178010F000CB3DA8 /* calendar_photo.jpg in Resources */,
 				F4FE8802178010FA00CB3DA8 /* tag_photo.jpg in Resources */,
+				E4C8B81D17C757C8009E7AF3 /* checkbox-checked.png in Resources */,
+				E4C8B81E17C757C8009E7AF3 /* checkbox.png in Resources */,
+				E419A50F17CAF7CF0004FD92 /* genre-action.jpg in Resources */,
+				E419A51017CAF7CF0004FD92 /* genre-alternative.jpg in Resources */,
+				E419A51117CAF7CF0004FD92 /* genre-animation.jpg in Resources */,
+				E419A51217CAF7CF0004FD92 /* genre-blues.jpg in Resources */,
+				E419A51317CAF7CF0004FD92 /* genre-books.jpg in Resources */,
+				E419A51417CAF7CF0004FD92 /* genre-business.jpg in Resources */,
+				E419A51517CAF7CF0004FD92 /* genre-childrens.jpg in Resources */,
+				E419A51617CAF7CF0004FD92 /* genre-christian.jpg in Resources */,
+				E419A51717CAF7CF0004FD92 /* genre-classic.jpg in Resources */,
+				E419A51817CAF7CF0004FD92 /* genre-classical.jpg in Resources */,
+				E419A51917CAF7CF0004FD92 /* genre-classics.jpg in Resources */,
+				E419A51A17CAF7CF0004FD92 /* genre-classicT.jpg in Resources */,
+				E419A51B17CAF7CF0004FD92 /* genre-comedy.jpg in Resources */,
+				E419A51C17CAF7CF0004FD92 /* genre-country.jpg in Resources */,
+				E419A51D17CAF7CF0004FD92 /* genre-dance.jpg in Resources */,
+				E419A51E17CAF7CF0004FD92 /* genre-documentary.jpg in Resources */,
+				E419A51F17CAF7CF0004FD92 /* genre-drama.jpg in Resources */,
+				E419A52017CAF7CF0004FD92 /* genre-education.jpg in Resources */,
+				E419A52117CAF7CF0004FD92 /* genre-electronic.jpg in Resources */,
+				E419A52217CAF7CF0004FD92 /* genre-engineering.jpg in Resources */,
+				E419A52317CAF7CF0004FD92 /* genre-finearts.jpg in Resources */,
+				E419A52417CAF7CF0004FD92 /* genre-folk.jpg in Resources */,
+				E419A52517CAF7CF0004FD92 /* genre-health.jpg in Resources */,
+				E419A52617CAF7CF0004FD92 /* genre-hiphop.jpg in Resources */,
+				E419A52717CAF7CF0004FD92 /* genre-history.jpg in Resources */,
+				E419A52817CAF7CF0004FD92 /* genre-holiday.jpg in Resources */,
+				E419A52917CAF7CF0004FD92 /* genre-horror.jpg in Resources */,
+				E419A52A17CAF7CF0004FD92 /* genre-humanities.jpg in Resources */,
+				E419A52B17CAF7CF0004FD92 /* genre-independent.jpg in Resources */,
+				E419A52C17CAF7CF0004FD92 /* genre-jazz.jpg in Resources */,
+				E419A52D17CAF7CF0004FD92 /* genre-jpop.jpg in Resources */,
+				E419A52E17CAF7CF0004FD92 /* genre-kayokyoku.jpg in Resources */,
+				E419A52F17CAF7CF0004FD92 /* genre-kids.jpg in Resources */,
+				E419A53017CAF7CF0004FD92 /* genre-language.jpg in Resources */,
+				E419A53117CAF7CF0004FD92 /* genre-latin.jpg in Resources */,
+				E419A53217CAF7CF0004FD92 /* genre-literature.jpg in Resources */,
+				E419A53317CAF7CF0004FD92 /* genre-mathematics.jpg in Resources */,
+				E419A53417CAF7CF0004FD92 /* genre-music.jpg in Resources */,
+				E419A53517CAF7CF0004FD92 /* genre-newage.jpg in Resources */,
+				E419A53617CAF7CF0004FD92 /* genre-nonfiction.jpg in Resources */,
+				E419A53717CAF7CF0004FD92 /* genre-pop.jpg in Resources */,
+				E419A53817CAF7CF0004FD92 /* genre-rb.jpg in Resources */,
+				E419A53917CAF7CF0004FD92 /* genre-reality.jpg in Resources */,
+				E419A53A17CAF7CF0004FD92 /* genre-reggae.jpg in Resources */,
+				E419A53B17CAF7CF0004FD92 /* genre-rock.jpg in Resources */,
+				E419A53C17CAF7CF0004FD92 /* genre-romance.jpg in Resources */,
+				E419A53D17CAF7CF0004FD92 /* genre-science.jpg in Resources */,
+				E419A53E17CAF7CF0004FD92 /* genre-scifi.jpg in Resources */,
+				E419A53F17CAF7CF0004FD92 /* genre-shortfilms.jpg in Resources */,
+				E419A54017CAF7CF0004FD92 /* genre-socialScience.jpg in Resources */,
+				E419A54117CAF7CF0004FD92 /* genre-soundtrack.jpg in Resources */,
+				E419A54217CAF7CF0004FD92 /* genre-spoken.jpg in Resources */,
+				E419A54317CAF7CF0004FD92 /* genre-sports.jpg in Resources */,
+				E419A54417CAF7CF0004FD92 /* genre-teens.jpg in Resources */,
+				E419A54517CAF7CF0004FD92 /* genre-thriller.jpg in Resources */,
+				E419A54617CAF7CF0004FD92 /* genre-vocal.jpg in Resources */,
+				E419A54717CAF7CF0004FD92 /* genre-western.jpg in Resources */,
+				E419A54817CAF7CF0004FD92 /* genre-world.jpg in Resources */,
+				E419A54B17CB19800004FD92 /* unchecked.png in Resources */,
+				E419A54C17CB19800004FD92 /* checked.png in Resources */,
+				E419A54E17CB1AD20004FD92 /* checked.jpg in Resources */,
+				E419A59317CB1C490004FD92 /* Lato-Black.ttf in Resources */,
+				E419A59417CB1C490004FD92 /* Lato-BlackItalic.ttf in Resources */,
+				E419A59517CB1C490004FD92 /* Lato-Bold.ttf in Resources */,
+				E419A59617CB1C490004FD92 /* Lato-BoldItalic.ttf in Resources */,
+				E419A59717CB1C490004FD92 /* Lato-Hairline.ttf in Resources */,
+				E419A59817CB1C490004FD92 /* Lato-HairlineItalic.ttf in Resources */,
+				E419A59917CB1C490004FD92 /* Lato-Italic.ttf in Resources */,
+				E419A59A17CB1C490004FD92 /* Lato-Light.ttf in Resources */,
+				E419A59B17CB1C490004FD92 /* Lato-LightItalic.ttf in Resources */,
+				E419A59C17CB1C490004FD92 /* Lato-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +745,33 @@
 				F4EECF6E177FD51400778578 /* MapViewController.m in Sources */,
 				F4EECF75177FF90600778578 /* PhotoViewController.m in Sources */,
 				F4FE88051781138100CB3DA8 /* SWRevealViewController.m in Sources */,
+				E41FB14917C6FF6B005CAC08 /* HomeViewController.m in Sources */,
+				E41FB14C17C6FF84005CAC08 /* EmailViewController.m in Sources */,
+				E41FB14F17C71E9B005CAC08 /* PlaylistViewController.m in Sources */,
+				E41FB15217C71EAB005CAC08 /* ArtistViewController.m in Sources */,
+				E43C8FE017C733D50059F811 /* SampleViewController.m in Sources */,
+				E445186F17CA8586000393F4 /* JanreTableViewCell.m in Sources */,
+				E445187317CA85A1000393F4 /* ArtistTableViewCell.m in Sources */,
+				E445187617CA8A87000393F4 /* JanreIndexedCollectionView.m in Sources */,
+				E419A4D417CAE4760004FD92 /* SelectJanreViewController.m in Sources */,
+				E419A57617CB1C400004FD92 /* FUIAlertView.m in Sources */,
+				E419A57717CB1C400004FD92 /* FUIButton.m in Sources */,
+				E419A57817CB1C400004FD92 /* FUICellBackgroundView.m in Sources */,
+				E419A57917CB1C400004FD92 /* FUIPopoverBackgroundView.m in Sources */,
+				E419A57A17CB1C400004FD92 /* FUISegmentedControl.m in Sources */,
+				E419A57B17CB1C400004FD92 /* FUISwitch.m in Sources */,
+				E419A57C17CB1C400004FD92 /* UIBarButtonItem+FlatUI.m in Sources */,
+				E419A57D17CB1C400004FD92 /* UIColor+FlatUI.m in Sources */,
+				E419A57E17CB1C400004FD92 /* UIFont+FlatUI.m in Sources */,
+				E419A57F17CB1C400004FD92 /* UIImage+FlatUI.m in Sources */,
+				E419A58017CB1C400004FD92 /* UINavigationBar+FlatUI.m in Sources */,
+				E419A58117CB1C400004FD92 /* UIPopoverController+FlatUI.m in Sources */,
+				E419A58217CB1C400004FD92 /* UIProgressView+FlatUI.m in Sources */,
+				E419A58317CB1C400004FD92 /* UISlider+FlatUI.m in Sources */,
+				E419A58417CB1C400004FD92 /* UIStepper+FlatUI.m in Sources */,
+				E419A58517CB1C400004FD92 /* UITabBar+FlatUI.m in Sources */,
+				E419A58617CB1C400004FD92 /* UITableViewCell+FlatUI.m in Sources */,
+				E419A58717CB1C400004FD92 /* UIToolbar+FlatUI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +859,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidebarDemo/SidebarDemo-Prefix.pch";
 				INFOPLIST_FILE = "SidebarDemo/SidebarDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -386,7 +872,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SidebarDemo/SidebarDemo-Prefix.pch";
 				INFOPLIST_FILE = "SidebarDemo/SidebarDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos6.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
