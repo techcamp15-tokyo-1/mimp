@@ -22,7 +22,7 @@
     // サブタイトル
     self.myLabelSubtitle.text = @"Music Meets LifeStyle";
     // 背景画像設定
-    UIImage *backgroundImage = [UIImage imageNamed:@"bg.png"];
+    UIImage *backgroundImage = [UIImage imageNamed:@"app-blurred-bg-16.jpg"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     

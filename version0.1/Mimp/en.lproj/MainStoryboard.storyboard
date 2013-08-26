@@ -99,16 +99,51 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ezR-Bh-GY5" firstAttribute="bottom" secondItem="n1r-kw-zVP" secondAttribute="bottom" type="default" id="9oz-i2-btD"/>
+                            <constraint firstItem="ezR-Bh-GY5" firstAttribute="top" secondItem="n1r-kw-zVP" secondAttribute="top" constant="-45" id="1GM-cy-sRq"/>
                             <constraint firstItem="ezR-Bh-GY5" firstAttribute="leading" secondItem="n1r-kw-zVP" secondAttribute="leading" type="default" id="Xqs-LG-pyz"/>
                             <constraint firstItem="ezR-Bh-GY5" firstAttribute="trailing" secondItem="n1r-kw-zVP" secondAttribute="trailing" type="default" id="ubn-6v-9Ze"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZBP-d8-mht"/>
+                    <connections>
+                        <segue destination="y2V-Q4-TMZ" kind="push" identifier="presentDetailView" id="vQT-5G-CNi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tda-Q8-lt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="642" y="-12"/>
+        </scene>
+        <!--Play View Controller-->
+        <scene sceneID="VDH-4w-Qs9">
+            <objects>
+                <viewController storyboardIdentifier="" id="y2V-Q4-TMZ" customClass="PlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wTF-Ka-hfc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Coldplay-Mylo-Xyloto.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZPB-f2-FAw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="4Wu-Du-MPM"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="MDP-Sh-AuL"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.39999999999999963"/>
+                        <constraints>
+                            <constraint firstItem="ZPB-f2-FAw" firstAttribute="top" secondItem="wTF-Ka-hfc" secondAttribute="top" type="default" id="12O-Tt-o35"/>
+                            <constraint firstItem="MDP-Sh-AuL" firstAttribute="bottom" secondItem="wTF-Ka-hfc" secondAttribute="bottom" type="default" id="TWs-Cm-2T4"/>
+                            <constraint firstItem="ZPB-f2-FAw" firstAttribute="leading" secondItem="wTF-Ka-hfc" secondAttribute="leading" type="default" id="nHz-wy-kZZ"/>
+                            <constraint firstItem="ZPB-f2-FAw" firstAttribute="trailing" secondItem="wTF-Ka-hfc" secondAttribute="trailing" type="default" id="uwc-xr-jem"/>
+                            <constraint firstItem="MDP-Sh-AuL" firstAttribute="leading" secondItem="wTF-Ka-hfc" secondAttribute="leading" type="default" id="y2g-Wa-lLZ"/>
+                            <constraint firstItem="MDP-Sh-AuL" firstAttribute="trailing" secondItem="wTF-Ka-hfc" secondAttribute="trailing" type="default" id="zZb-43-sOc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="V3N-Y2-2IU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcz-dC-6yz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="-12"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eFy-GP-baj">
@@ -177,12 +212,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8t-nO-C4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1173" y="-7"/>
+            <point key="canvasLocation" x="642" y="701"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wFj-N4-7Te">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9RZ-Yq-Xpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="1nM-6D-dE6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ibt-G0-g1P">
@@ -194,11 +228,13 @@
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="EWf-Im-Dnb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9RZ-Yq-Xpq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-402" y="-12"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Coldplay-Mylo-Xyloto.jpg" width="1000" height="1000"/>
         <image name="facebook_login.png" width="265" height="50"/>
         <image name="photo.JPG" width="640" height="520"/>
     </resources>
@@ -206,19 +242,23 @@
         <class className="MapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
             <relationships>
-                <relationship kind="action" name="stepperValuechanged:"/>
+                <relationship kind="action" name="updateButtonPressed:"/>
+                <relationship kind="outlet" name="playViewController" candidateClass="PlayViewController"/>
+                <relationship kind="outlet" name="stepper" candidateClass="UIStepper"/>
             </relationships>
         </class>
         <class className="MimpViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MimpViewController.h"/>
             <relationships>
-                <relationship kind="action" name="loginButtonPressed:"/>
                 <relationship kind="outlet" name="myLabelSubtitle" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="myLabelTitle" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PlayViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlayViewController.h"/>
         </class>
         <class className="UICollectionReusableView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>

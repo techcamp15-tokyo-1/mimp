@@ -8,15 +8,19 @@
 
 #import "MapViewController.h"
 #import "CustomAnnotation.h"
+#import "PlayViewController.h"
 
 
 @interface MapViewController ()
+@property (nonatomic, strong) IBOutlet PlayViewController *playViewController;
 
 @end
 
 @implementation MapViewController {
     IBOutlet MKMapView* __weak map_; // connect IBOutlet and delegate in Interface Builder
 }
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,12 +40,12 @@
 {
     [super viewDidLoad];
     
-    // ナビゲーションバーの色を変更
-    // アプリケーション全体的にバーボタンアイテムをカスタマイズする(Appearanceの設定)
+    // ナビゲーションバー色変更
+    // アプリケーション全体的にバーボタンアイテムをカスタマイズ(Appearanceの設定)
     [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
                                   highlightedColor:[UIColor belizeHoleColor]
                                       cornerRadius:3];
-    // UINavigationBarのUIをフラット化する
+    // UINavigationBarのUIをフラット化
     [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     //　ステータスバ設定
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;
@@ -56,7 +60,6 @@
     _mapView.showsUserLocation = YES;
     _mapView.delegate = self;
     [self.view addSubview:_mapView];
-    [self addSomeAnnotations];
     [_mapView.userLocation addObserver:self
                             forKeyPath:@"location"
                                options:0
@@ -76,8 +79,15 @@
                                                     title:@"Mr. Bean"
                                                  subtitle:@"Comedy"]];
     
+
+    
+    
 }
 
+
+
+
+// アノテーション
 - (MKAnnotationView*)mapView:(MKMapView*)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
     
     MKAnnotationView *annotationView;
@@ -88,14 +98,22 @@
     }
     annotationView.image = [UIImage imageNamed:@"map.png"];
     annotationView.canShowCallout = YES;
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    annotationView.annotation = annotation;
+    // 変数宣言
+    UIButton *disclosureButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    // ボタン設置
+    annotationView.rightCalloutAccessoryView = disclosureButton;
+    // ボタンアクション指定
+    [disclosureButton addTarget:self action:@selector(playPlaylist) forControlEvents:UIControlEventTouchUpInside];
     
-    return annotationView;  
+    annotationView.annotation = annotation;
+    return annotationView;
+    
 }
 
-
-
+// 画面遷移
+-(void)playPlaylist{
+    [self performSegueWithIdentifier:@"presentDetailView" sender:self];
+}
 
 
 - (void)observeValueForKeyPath:(NSString *)keyPath
@@ -119,40 +137,34 @@
 
 
 
+
+
+
 /**
  * ナビゲーションバー表示
  *
  * @param : NO => ナビゲーションバーが消える
  * @param : YES => ナビゲーションのアニメーションが使える
  */
--(void)viewWillAppear:(BOOL)animated{
+-(void)viewWillAppear:(BOOL)animated
+{
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 // ナビゲーションバー非表示
--(void)viewWillDisappear:(BOOL)animated{
+-(void)viewWillDisappear:(BOOL)animated
+{
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 
-- (void) addSomeAnnotations
-{
-    //位置
-    double latitude = 37.331688999999997;
-	double longitude = -122.030731;
-	CLLocationCoordinate2D _location;
-	_location.latitude = latitude;
-	_location.longitude = longitude;
-}
+
+
 
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)stepperValuechanged:(id)sender {
-    
 }
 @end
 

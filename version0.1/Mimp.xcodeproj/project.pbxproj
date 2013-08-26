@@ -16,6 +16,28 @@
 		9F2E6B5717C9E1AB003BE0B8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2E6B5617C9E1AB003BE0B8 /* AdSupport.framework */; };
 		9F5849AF17CB56580013F0D0 /* profile_kanye_west.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849AE17CB56580013F0D0 /* profile_kanye_west.jpg */; };
 		9F5849B217CB5EA80013F0D0 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5849B117CB5EA80013F0D0 /* CustomNavigationBar.m */; };
+		9F5849C917CB96880013F0D0 /* app-blurred-bg-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849B417CB96880013F0D0 /* app-blurred-bg-1.jpg */; };
+		9F5849CA17CB96880013F0D0 /* app-blurred-bg-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849B517CB96880013F0D0 /* app-blurred-bg-10.jpg */; };
+		9F5849CB17CB96880013F0D0 /* app-blurred-bg-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849B617CB96880013F0D0 /* app-blurred-bg-11.jpg */; };
+		9F5849CC17CB96880013F0D0 /* app-blurred-bg-12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849B717CB96880013F0D0 /* app-blurred-bg-12.jpg */; };
+		9F5849CD17CB96880013F0D0 /* app-blurred-bg-13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849B817CB96880013F0D0 /* app-blurred-bg-13.jpg */; };
+		9F5849CE17CB96880013F0D0 /* app-blurred-bg-14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849B917CB96880013F0D0 /* app-blurred-bg-14.jpg */; };
+		9F5849CF17CB96880013F0D0 /* app-blurred-bg-15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849BA17CB96880013F0D0 /* app-blurred-bg-15.jpg */; };
+		9F5849D017CB96880013F0D0 /* app-blurred-bg-16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849BB17CB96880013F0D0 /* app-blurred-bg-16.jpg */; };
+		9F5849D117CB96880013F0D0 /* app-blurred-bg-17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849BC17CB96880013F0D0 /* app-blurred-bg-17.jpg */; };
+		9F5849D217CB96880013F0D0 /* app-blurred-bg-18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849BD17CB96880013F0D0 /* app-blurred-bg-18.jpg */; };
+		9F5849D317CB96880013F0D0 /* app-blurred-bg-19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849BE17CB96880013F0D0 /* app-blurred-bg-19.jpg */; };
+		9F5849D417CB96880013F0D0 /* app-blurred-bg-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849BF17CB96880013F0D0 /* app-blurred-bg-2.jpg */; };
+		9F5849D517CB96880013F0D0 /* app-blurred-bg-20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C017CB96880013F0D0 /* app-blurred-bg-20.jpg */; };
+		9F5849D617CB96880013F0D0 /* app-blurred-bg-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C117CB96880013F0D0 /* app-blurred-bg-3.jpg */; };
+		9F5849D717CB96880013F0D0 /* app-blurred-bg-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C217CB96880013F0D0 /* app-blurred-bg-4.jpg */; };
+		9F5849D817CB96880013F0D0 /* app-blurred-bg-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C317CB96880013F0D0 /* app-blurred-bg-5.jpg */; };
+		9F5849D917CB96880013F0D0 /* app-blurred-bg-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C417CB96880013F0D0 /* app-blurred-bg-6.jpg */; };
+		9F5849DA17CB96880013F0D0 /* app-blurred-bg-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C517CB96880013F0D0 /* app-blurred-bg-7.jpg */; };
+		9F5849DB17CB96880013F0D0 /* app-blurred-bg-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C617CB96880013F0D0 /* app-blurred-bg-8.jpg */; };
+		9F5849DC17CB96880013F0D0 /* app-blurred-bg-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C717CB96880013F0D0 /* app-blurred-bg-9.jpg */; };
+		9F5849DD17CB96880013F0D0 /* MediaLoot_License_Agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C817CB96880013F0D0 /* MediaLoot_License_Agreement.pdf */; };
+		9F5849E017CB9ADE0013F0D0 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */; };
 		9F86F62417C9BB7800D8F576 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86F62317C9BB7800D8F576 /* UIKit.framework */; };
 		9F86F62617C9BB7800D8F576 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86F62517C9BB7800D8F576 /* Foundation.framework */; };
 		9F86F62817C9BB7800D8F576 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86F62717C9BB7800D8F576 /* CoreGraphics.framework */; };
@@ -88,6 +110,29 @@
 		9F5849AE17CB56580013F0D0 /* profile_kanye_west.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile_kanye_west.jpg; sourceTree = "<group>"; };
 		9F5849B017CB5EA80013F0D0 /* CustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
 		9F5849B117CB5EA80013F0D0 /* CustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
+		9F5849B417CB96880013F0D0 /* app-blurred-bg-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-1.jpg"; sourceTree = "<group>"; };
+		9F5849B517CB96880013F0D0 /* app-blurred-bg-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-10.jpg"; sourceTree = "<group>"; };
+		9F5849B617CB96880013F0D0 /* app-blurred-bg-11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-11.jpg"; sourceTree = "<group>"; };
+		9F5849B717CB96880013F0D0 /* app-blurred-bg-12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-12.jpg"; sourceTree = "<group>"; };
+		9F5849B817CB96880013F0D0 /* app-blurred-bg-13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-13.jpg"; sourceTree = "<group>"; };
+		9F5849B917CB96880013F0D0 /* app-blurred-bg-14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-14.jpg"; sourceTree = "<group>"; };
+		9F5849BA17CB96880013F0D0 /* app-blurred-bg-15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-15.jpg"; sourceTree = "<group>"; };
+		9F5849BB17CB96880013F0D0 /* app-blurred-bg-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-16.jpg"; sourceTree = "<group>"; };
+		9F5849BC17CB96880013F0D0 /* app-blurred-bg-17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-17.jpg"; sourceTree = "<group>"; };
+		9F5849BD17CB96880013F0D0 /* app-blurred-bg-18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-18.jpg"; sourceTree = "<group>"; };
+		9F5849BE17CB96880013F0D0 /* app-blurred-bg-19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-19.jpg"; sourceTree = "<group>"; };
+		9F5849BF17CB96880013F0D0 /* app-blurred-bg-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-2.jpg"; sourceTree = "<group>"; };
+		9F5849C017CB96880013F0D0 /* app-blurred-bg-20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-20.jpg"; sourceTree = "<group>"; };
+		9F5849C117CB96880013F0D0 /* app-blurred-bg-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-3.jpg"; sourceTree = "<group>"; };
+		9F5849C217CB96880013F0D0 /* app-blurred-bg-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-4.jpg"; sourceTree = "<group>"; };
+		9F5849C317CB96880013F0D0 /* app-blurred-bg-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-5.jpg"; sourceTree = "<group>"; };
+		9F5849C417CB96880013F0D0 /* app-blurred-bg-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-6.jpg"; sourceTree = "<group>"; };
+		9F5849C517CB96880013F0D0 /* app-blurred-bg-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-7.jpg"; sourceTree = "<group>"; };
+		9F5849C617CB96880013F0D0 /* app-blurred-bg-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-8.jpg"; sourceTree = "<group>"; };
+		9F5849C717CB96880013F0D0 /* app-blurred-bg-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "app-blurred-bg-9.jpg"; sourceTree = "<group>"; };
+		9F5849C817CB96880013F0D0 /* MediaLoot_License_Agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MediaLoot_License_Agreement.pdf; sourceTree = "<group>"; };
+		9F5849DE17CB9ADE0013F0D0 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		9F86F62017C9BB7800D8F576 /* Mimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F86F62317C9BB7800D8F576 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F86F62517C9BB7800D8F576 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -198,6 +243,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F5849B317CB96880013F0D0 /* app_br_bacground */ = {
+			isa = PBXGroup;
+			children = (
+				9F5849B417CB96880013F0D0 /* app-blurred-bg-1.jpg */,
+				9F5849B517CB96880013F0D0 /* app-blurred-bg-10.jpg */,
+				9F5849B617CB96880013F0D0 /* app-blurred-bg-11.jpg */,
+				9F5849B717CB96880013F0D0 /* app-blurred-bg-12.jpg */,
+				9F5849B817CB96880013F0D0 /* app-blurred-bg-13.jpg */,
+				9F5849B917CB96880013F0D0 /* app-blurred-bg-14.jpg */,
+				9F5849BA17CB96880013F0D0 /* app-blurred-bg-15.jpg */,
+				9F5849BB17CB96880013F0D0 /* app-blurred-bg-16.jpg */,
+				9F5849BC17CB96880013F0D0 /* app-blurred-bg-17.jpg */,
+				9F5849BD17CB96880013F0D0 /* app-blurred-bg-18.jpg */,
+				9F5849BE17CB96880013F0D0 /* app-blurred-bg-19.jpg */,
+				9F5849BF17CB96880013F0D0 /* app-blurred-bg-2.jpg */,
+				9F5849C017CB96880013F0D0 /* app-blurred-bg-20.jpg */,
+				9F5849C117CB96880013F0D0 /* app-blurred-bg-3.jpg */,
+				9F5849C217CB96880013F0D0 /* app-blurred-bg-4.jpg */,
+				9F5849C317CB96880013F0D0 /* app-blurred-bg-5.jpg */,
+				9F5849C417CB96880013F0D0 /* app-blurred-bg-6.jpg */,
+				9F5849C517CB96880013F0D0 /* app-blurred-bg-7.jpg */,
+				9F5849C617CB96880013F0D0 /* app-blurred-bg-8.jpg */,
+				9F5849C717CB96880013F0D0 /* app-blurred-bg-9.jpg */,
+				9F5849C817CB96880013F0D0 /* MediaLoot_License_Agreement.pdf */,
+			);
+			path = app_br_bacground;
+			sourceTree = "<group>";
+		};
 		9F86F61717C9BB7800D8F576 = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +318,8 @@
 				9F86F63F17C9BB7800D8F576 /* MimpViewController.m */,
 				9F86F65517C9C16900D8F576 /* MapViewController.h */,
 				9F86F65617C9C16900D8F576 /* MapViewController.m */,
+				9F5849DE17CB9ADE0013F0D0 /* PlayViewController.h */,
+				9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */,
 				9F5849B017CB5EA80013F0D0 /* CustomNavigationBar.h */,
 				9F5849B117CB5EA80013F0D0 /* CustomNavigationBar.m */,
 				9FBD4AD417CAF3960069958D /* CustomAnnotation.h */,
@@ -274,6 +349,7 @@
 		9F86F64617C9BB9400D8F576 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				9F5849B317CB96880013F0D0 /* app_br_bacground */,
 				9FD6F35817CB520A000E26FC /* user */,
 				9FD6F35317CB347B000E26FC /* album_artwork */,
 				9FBD4ADE17CB171D0069958D /* map.png */,
@@ -465,6 +541,27 @@
 				9FD6F35717CB34C5000E26FC /* coldplay-mylo-xyloto-inside-cover-385.jpg in Resources */,
 				9FD6F35A17CB520A000E26FC /* photo.JPG in Resources */,
 				9F5849AF17CB56580013F0D0 /* profile_kanye_west.jpg in Resources */,
+				9F5849C917CB96880013F0D0 /* app-blurred-bg-1.jpg in Resources */,
+				9F5849CA17CB96880013F0D0 /* app-blurred-bg-10.jpg in Resources */,
+				9F5849CB17CB96880013F0D0 /* app-blurred-bg-11.jpg in Resources */,
+				9F5849CC17CB96880013F0D0 /* app-blurred-bg-12.jpg in Resources */,
+				9F5849CD17CB96880013F0D0 /* app-blurred-bg-13.jpg in Resources */,
+				9F5849CE17CB96880013F0D0 /* app-blurred-bg-14.jpg in Resources */,
+				9F5849CF17CB96880013F0D0 /* app-blurred-bg-15.jpg in Resources */,
+				9F5849D017CB96880013F0D0 /* app-blurred-bg-16.jpg in Resources */,
+				9F5849D117CB96880013F0D0 /* app-blurred-bg-17.jpg in Resources */,
+				9F5849D217CB96880013F0D0 /* app-blurred-bg-18.jpg in Resources */,
+				9F5849D317CB96880013F0D0 /* app-blurred-bg-19.jpg in Resources */,
+				9F5849D417CB96880013F0D0 /* app-blurred-bg-2.jpg in Resources */,
+				9F5849D517CB96880013F0D0 /* app-blurred-bg-20.jpg in Resources */,
+				9F5849D617CB96880013F0D0 /* app-blurred-bg-3.jpg in Resources */,
+				9F5849D717CB96880013F0D0 /* app-blurred-bg-4.jpg in Resources */,
+				9F5849D817CB96880013F0D0 /* app-blurred-bg-5.jpg in Resources */,
+				9F5849D917CB96880013F0D0 /* app-blurred-bg-6.jpg in Resources */,
+				9F5849DA17CB96880013F0D0 /* app-blurred-bg-7.jpg in Resources */,
+				9F5849DB17CB96880013F0D0 /* app-blurred-bg-8.jpg in Resources */,
+				9F5849DC17CB96880013F0D0 /* app-blurred-bg-9.jpg in Resources */,
+				9F5849DD17CB96880013F0D0 /* MediaLoot_License_Agreement.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +596,7 @@
 				9FCB47FC17C9EF400099AC5A /* UIToolbar+FlatUI.m in Sources */,
 				9FBD4AD017CAEB7F0069958D /* CustomAnnotation.m in Sources */,
 				9F5849B217CB5EA80013F0D0 /* CustomNavigationBar.m in Sources */,
+				9F5849E017CB9ADE0013F0D0 /* PlayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
