@@ -17,6 +17,7 @@
 
 @interface MapViewController : UIViewController <MKMapViewDelegate> {
 	MKMapView *_mapView;
+    
 }
 
 @property (weak, nonatomic) IBOutlet UIStepper *stepper;

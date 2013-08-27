@@ -140,6 +140,8 @@
      [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.659588,139.698629)
                                                    title:@"Mr. Bean"
                                                 subtitle:@"Comedy"]];
+    
+    
 }
 
 
@@ -162,14 +164,38 @@
         // アルバムアートワーク画像表示
         UIImage *playlistImage = [UIImage imageNamed:@"map.png"];
         annotationView.image = playlistImage;
+        /*
+         *
+         * Annotationの右へのボタン画像にする
+         *
+         UIImageView *imageView = // init the image view ...
+         [imageView setImage:_image];
+         [annotationView setRightCalloutAccessoryView:imageView];
+         */
         // 変数宣言
         UIButton *disclosureButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         // 再生画面へのボタン設置
         annotationView.rightCalloutAccessoryView = disclosureButton;
         // 再生画面へのアクション指定
         [disclosureButton addTarget:self action:@selector(playPlaylist) forControlEvents:UIControlEventTouchUpInside];
+
+        // アルバムアートワークリサイズ
+        // リサイズ前UIImage
+        UIImage *img_before = [UIImage imageNamed:@"preview.png"];
+        // リサイズ後UIImage
+        UIImage *img_after;
+        // リサイズ後幅サイズ
+        CGFloat width = 30;
+        // リサイズ後高さサイズ
+        CGFloat height = 30;
+        
+        UIGraphicsBeginImageContext(CGSizeMake(width, height));
+        [img_before drawInRect:CGRectMake(0, 0, width, height)];
+        img_after = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+    
         // アルバムアートワークを表示
-        UIImageView *albumArtworkView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"coldplay-mylo-xyloto-inside-cover-385.jpg"]];
+        UIImage *albumArtworkView = [[UIImageView alloc] initWithImage:img_after];
         annotationView.leftCalloutAccessoryView = albumArtworkView;
         annotationView.annotation = annotation;
         
