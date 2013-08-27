@@ -1,3 +1,3 @@
-mimp
+Reams
 ====
 iOS application which we made at Technology Camp  CA 
