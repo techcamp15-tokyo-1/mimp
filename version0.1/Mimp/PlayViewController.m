@@ -27,6 +27,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    // 背景画像設定
+    UIImage *backgroundImage = [UIImage imageNamed:@"dark_background.png"];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
+    
+    //　ステータスバ設定
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;
 }
 
 - (void)didReceiveMemoryWarning
