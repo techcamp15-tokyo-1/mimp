@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Mimp/MapViewController.m"
-         timestampString = "399221900.948055"
+         timestampString = "399283757.453229"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "54"
-         endingLineNumber = "54"
+         startingLineNumber = "52"
+         endingLineNumber = "52"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Mimp/MapViewController.m"
-         timestampString = "399232379.484821"
+         timestampString = "399292447.000127"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "142"
-         endingLineNumber = "142"
+         startingLineNumber = "174"
+         endingLineNumber = "174"
          landmarkName = "@implementation MapViewController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Mimp/MapViewController.m"
-         timestampString = "399232379.484821"
+         timestampString = "399292447.000127"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "131"
-         endingLineNumber = "131"
+         startingLineNumber = "163"
+         endingLineNumber = "163"
          landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Mimp/MapViewController.m"
-         timestampString = "399232379.484821"
+         timestampString = "399292447.000127"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "133"
-         endingLineNumber = "133"
+         startingLineNumber = "165"
+         endingLineNumber = "165"
          landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Mimp/MapViewController.m"
-         timestampString = "399232379.484821"
+         timestampString = "399292447.000127"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "140"
-         endingLineNumber = "140"
+         startingLineNumber = "172"
+         endingLineNumber = "172"
          landmarkName = "@implementation MapViewController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -99,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Mimp/MapViewController.m"
-         timestampString = "399232379.484821"
+         timestampString = "399292447.000127"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "130"
-         endingLineNumber = "130"
+         startingLineNumber = "162"
+         endingLineNumber = "162"
          landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Mimp/MapViewController.m"
-         timestampString = "399232379.484821"
+         timestampString = "399292447.000127"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "141"
-         endingLineNumber = "141"
+         startingLineNumber = "173"
+         endingLineNumber = "173"
          landmarkName = "@implementation MapViewController"
          landmarkType = "3">
       </FileBreakpoint>

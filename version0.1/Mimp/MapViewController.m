@@ -47,8 +47,6 @@
                                       cornerRadius:3];
     // UINavigationBarのUIをフラット化
     [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
-    //　ステータスバ設定
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackTranslucent;
     
     
 
@@ -79,35 +77,69 @@
                                                     title:@"Mr. Bean"
                                                  subtitle:@"Comedy"]];
     
-
+    /**
+      * デモ用 
+      * 場所 : 渋谷周辺
+      *
+      */
+    // 東京都渋谷区道玄坂一丁目12番1号渋谷マークシティウエスト
+    [_mapView addAnnotation:
+    [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.657988,139.698284)
+                                                   title:@"Mr. Bean"
+                                                subtitle:@"Comedy"]];
     
+    // 東京都渋谷区道玄坂2丁目11番1号 サイバーエージェントビル
+    [_mapView addAnnotation:
+    [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.657989,139.696129)
+                                                   title:@"Mr. Bean"
+                                                subtitle:@"Comedy"]];
     
+    // 東京都渋谷区円山町19番1号 渋谷プライムプラザ
+    [_mapView addAnnotation:
+    [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.656563,139.695006)
+                                                   title:@"Mr. Bean"
+                                                subtitle:@"Comedy"]];
+    
+    // 東京都渋谷区神泉町8-16渋谷ファーストプレイス
+    [_mapView addAnnotation:
+    [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.655262,139.69373)
+                                                   title:@"Mr. Bean"
+                                                subtitle:@"Comedy"]];
 }
 
 
 
 
-// アノテーション
+// アノテーション追加
 - (MKAnnotationView*)mapView:(MKMapView*)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-    
     MKAnnotationView *annotationView;
     NSString* identifier = @"Pin";
-    annotationView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-    if(nil == annotationView) {
-        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+    // アノテーションを追加するかどうか判定
+    if ([annotation isKindOfClass:[MKUserLocation class]]){ //ユーザーの現在地の場合
+        return nil;
+    } else { //ユーザーの現在地ではない場合
+    
+        annotationView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if(nil == annotationView) {
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        }
+        annotationView.canShowCallout = YES;
+        // アルバムアートワーク画像表示
+        UIImage *playlistImage = [UIImage imageNamed:@"map.png"];
+        annotationView.image = playlistImage;
+        // 変数宣言
+        UIButton *disclosureButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        // 再生画面へのボタン設置
+        annotationView.rightCalloutAccessoryView = disclosureButton;
+        // 再生画面へのアクション指定
+        [disclosureButton addTarget:self action:@selector(playPlaylist) forControlEvents:UIControlEventTouchUpInside];
+        // アルバムアートワークを表示
+        UIImageView *albumArtworkView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"coldplay-mylo-xyloto-inside-cover-385.jpg"]];
+        annotationView.leftCalloutAccessoryView = albumArtworkView;
+        annotationView.annotation = annotation;
+        
+        return annotationView;
     }
-    annotationView.image = [UIImage imageNamed:@"map.png"];
-    annotationView.canShowCallout = YES;
-    // 変数宣言
-    UIButton *disclosureButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    // ボタン設置
-    annotationView.rightCalloutAccessoryView = disclosureButton;
-    // ボタンアクション指定
-    [disclosureButton addTarget:self action:@selector(playPlaylist) forControlEvents:UIControlEventTouchUpInside];
-    
-    annotationView.annotation = annotation;
-    return annotationView;
-    
 }
 
 // 画面遷移
@@ -121,16 +153,16 @@
                         change:(NSDictionary *)change
                        context:(void *)context {
     
-    // 地図の中心座標に現在地を設定
+    // 地図の中心座標に現在地設定
     _mapView.centerCoordinate = _mapView.userLocation.location.coordinate;
     
-    // 表示倍率の設定
+    // 表示倍率設定
     MKCoordinateSpan span = MKCoordinateSpanMake(0.01, 0.01);
     MKCoordinateRegion region = MKCoordinateRegionMake(_mapView.userLocation.coordinate, span);
     [_mapView setRegion:region animated:YES];
     
     
-    // 一度しか更新しない場合はremoveする必要、これを設定すると中心を変えられる
+    // 一度しか更新しない場合はremoveする必要、これを設定すると中心地変更可
     [_mapView.userLocation removeObserver:self forKeyPath:@"location"];
 }
 

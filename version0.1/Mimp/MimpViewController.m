@@ -8,6 +8,7 @@
 
 #import "MimpViewController.h"
 
+
 @interface MimpViewController ()
 
 @end
@@ -22,7 +23,7 @@
     // サブタイトル
     self.myLabelSubtitle.text = @"Music Meets LifeStyle";
     // 背景画像設定
-    UIImage *backgroundImage = [UIImage imageNamed:@"dark_background.png"];
+    UIImage *backgroundImage = [UIImage imageNamed:@"all_background.png"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     
