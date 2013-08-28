@@ -35,6 +35,7 @@
 		9F5849DC17CB96880013F0D0 /* app-blurred-bg-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C717CB96880013F0D0 /* app-blurred-bg-9.jpg */; };
 		9F5849DD17CB96880013F0D0 /* MediaLoot_License_Agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C817CB96880013F0D0 /* MediaLoot_License_Agreement.pdf */; };
 		9F5849E017CB9ADE0013F0D0 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */; };
+		9F8694A917CD68ED00DD5163 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8694A817CD68ED00DD5163 /* MediaPlayer.framework */; };
 		9F86F62417C9BB7800D8F576 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86F62317C9BB7800D8F576 /* UIKit.framework */; };
 		9F86F62617C9BB7800D8F576 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86F62517C9BB7800D8F576 /* Foundation.framework */; };
 		9F86F62817C9BB7800D8F576 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86F62717C9BB7800D8F576 /* CoreGraphics.framework */; };
@@ -138,6 +139,7 @@
 		9F5849C817CB96880013F0D0 /* MediaLoot_License_Agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MediaLoot_License_Agreement.pdf; sourceTree = "<group>"; };
 		9F5849DE17CB9ADE0013F0D0 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		9F8694A817CD68ED00DD5163 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		9F86F62017C9BB7800D8F576 /* Mimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F86F62317C9BB7800D8F576 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F86F62517C9BB7800D8F576 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -242,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8694A917CD68ED00DD5163 /* MediaPlayer.framework in Frameworks */,
 				9FCB47C317C9EE020099AC5A /* CoreText.framework in Frameworks */,
 				9F2E6B5717C9E1AB003BE0B8 /* AdSupport.framework in Frameworks */,
 				9F2E6B5517C9E195003BE0B8 /* Security.framework in Frameworks */,
@@ -308,6 +311,7 @@
 		9F86F62217C9BB7800D8F576 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F8694A817CD68ED00DD5163 /* MediaPlayer.framework */,
 				9FCB47C217C9EE020099AC5A /* CoreText.framework */,
 				9F2E6B5617C9E1AB003BE0B8 /* AdSupport.framework */,
 				9F2E6B5417C9E195003BE0B8 /* Security.framework */,
@@ -344,6 +348,7 @@
 		9F86F62A17C9BB7800D8F576 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F8BA18517CD338A003375D0 /* font */,
 				9FBEDB3F17CCAD52000AC750 /* Flat UIKit */,
 				9F86F64617C9BB9400D8F576 /* image */,
 				9F86F62B17C9BB7800D8F576 /* Mimp-Info.plist */,
@@ -392,6 +397,13 @@
 			);
 			name = demo_image;
 			path = ../demo_image;
+			sourceTree = "<group>";
+		};
+		9F8BA18517CD338A003375D0 /* font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 		9FBEDB3017CC7D31000AC750 /* music */ = {

@@ -48,9 +48,9 @@
     // UINavigationBarのUIをフラット化
     [self.navigationController.navigationBar configureFlatNavigationBarWithColor:[UIColor midnightBlueColor]];
     
+    // タイトル設定
+    self.navigationItem.title = @"Map";
     
-
-
     // 地図の表示
     _mapView = [[MKMapView alloc] init];
     _mapView.frame = self.view.bounds;
@@ -62,8 +62,7 @@
                             forKeyPath:@"location"
                                options:0
                                context:NULL];
-
-    // 
+    
     [_mapView addAnnotation:
     [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.685623,139.763153)
                                                     title:@"Action Playlist"
@@ -195,7 +194,7 @@
         UIGraphicsEndImageContext();
     
         // アルバムアートワークを表示
-        UIImage *albumArtworkView = [[UIImageView alloc] initWithImage:img_after];
+        UIImageView *albumArtworkView = [[UIImageView alloc] initWithImage:img_after];
         annotationView.leftCalloutAccessoryView = albumArtworkView;
         annotationView.annotation = annotation;
         
@@ -225,6 +224,8 @@
     
     // 一度しか更新しない場合はremoveする必要、これを設定すると中心地変更可
     [_mapView.userLocation removeObserver:self forKeyPath:@"location"];
+    
+    
 }
 
 
@@ -250,6 +251,30 @@
 }
 
 
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    CLLocationCoordinate2D coordinate = newLocation.coordinate;
+    
+    [_mapView setCenterCoordinate:coordinate animated:NO];
+    
+    // 縮尺を設定
+    MKCoordinateRegion zoom = _mapView.region;
+    zoom.span.latitudeDelta = 0.005;
+    zoom.span.longitudeDelta = 0.005;
+    [_mapView setRegion:zoom animated:YES];
+    _mapView.showsUserLocation=TRUE;
+    
+}
+
+
+// 測位失敗時や、位置情報の利用をユーザーが許可しなかった場合などに呼ぶ
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"位置情報利用不可" message:@"位置情報の取得に失敗しました。" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    
+    [alert show];
+}
+
 
 
 
@@ -259,6 +284,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// 地図の位置情報修正
+
+
+
 @end
 
 

@@ -19,7 +19,8 @@
 {
     [super viewDidLoad];
 	// タイトル
-    self.myLabelTitle.text = @"MIMP";
+    self.myLabelTitle.text = @"Reams";
+    self.myLabelTitle.font = [UIFont fontWithName:@"Lato-Regular" size:70.0];
     // サブタイトル
     self.myLabelSubtitle.text = @"Music Meets LifeStyle";
     // 背景画像設定
