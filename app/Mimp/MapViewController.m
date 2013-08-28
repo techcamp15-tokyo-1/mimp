@@ -51,6 +51,7 @@
     // タイトル設定
     self.navigationItem.title = @"Map";
     
+    
     // 地図の表示
     _mapView = [[MKMapView alloc] init];
     _mapView.frame = self.view.bounds;
@@ -62,6 +63,15 @@
                             forKeyPath:@"location"
                                options:0
                                context:NULL];
+    
+
+    
+    // 表示位置を設定（ここでは東京都庁の経度緯度を例としています）
+    CLLocationCoordinate2D coordinate;
+    coordinate.latitude = 35.678544454230064;     // 緯度
+    coordinate.longitude = 139.77050334281154;    // 経度
+    
+    
     
     [_mapView addAnnotation:
     [[CustomAnnotation alloc]initWithLocationCoordinate:CLLocationCoordinate2DMake(35.685623,139.763153)
@@ -215,6 +225,8 @@
     
     // 地図の中心座標に現在地設定
     _mapView.centerCoordinate = _mapView.userLocation.location.coordinate;
+    
+    
     
     // 表示倍率設定
     MKCoordinateSpan span = MKCoordinateSpanMake(0.01, 0.01);

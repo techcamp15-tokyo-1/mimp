@@ -17,8 +17,14 @@
 
 @interface MapViewController : UIViewController <MKMapViewDelegate> {
 	MKMapView *_mapView;
+    NSValue *value;
     
+    CLLocationCoordinate2D coordinate; // 現在の緯度経度
+   
 }
+
+
+
 
 @property (weak, nonatomic) IBOutlet UIStepper *stepper;
 

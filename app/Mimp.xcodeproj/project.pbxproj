@@ -35,6 +35,8 @@
 		9F5849DC17CB96880013F0D0 /* app-blurred-bg-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C717CB96880013F0D0 /* app-blurred-bg-9.jpg */; };
 		9F5849DD17CB96880013F0D0 /* MediaLoot_License_Agreement.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9F5849C817CB96880013F0D0 /* MediaLoot_License_Agreement.pdf */; };
 		9F5849E017CB9ADE0013F0D0 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */; };
+		9F59297217CE7C9A000310B4 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F59297117CE7C9A000310B4 /* ListViewController.m */; };
+		9F59297517CE7F88000310B4 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F59297417CE7F88000310B4 /* XMLParser.m */; };
 		9F8694A917CD68ED00DD5163 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8694A817CD68ED00DD5163 /* MediaPlayer.framework */; };
 		9F86F62417C9BB7800D8F576 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86F62317C9BB7800D8F576 /* UIKit.framework */; };
 		9F86F62617C9BB7800D8F576 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F86F62517C9BB7800D8F576 /* Foundation.framework */; };
@@ -139,6 +141,10 @@
 		9F5849C817CB96880013F0D0 /* MediaLoot_License_Agreement.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MediaLoot_License_Agreement.pdf; sourceTree = "<group>"; };
 		9F5849DE17CB9ADE0013F0D0 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		9F59297017CE7C9A000310B4 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		9F59297117CE7C9A000310B4 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		9F59297317CE7F88000310B4 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		9F59297417CE7F88000310B4 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		9F8694A817CD68ED00DD5163 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		9F86F62017C9BB7800D8F576 /* Mimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F86F62317C9BB7800D8F576 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -338,6 +344,10 @@
 				9F86F65517C9C16900D8F576 /* MapViewController.h */,
 				9F86F65617C9C16900D8F576 /* MapViewController.m */,
 				9FBEDB3D17CCAD15000AC750 /* Annotations */,
+				9F59297017CE7C9A000310B4 /* ListViewController.h */,
+				9F59297117CE7C9A000310B4 /* ListViewController.m */,
+				9F59297317CE7F88000310B4 /* XMLParser.h */,
+				9F59297417CE7F88000310B4 /* XMLParser.m */,
 				9F5849DE17CB9ADE0013F0D0 /* PlayViewController.h */,
 				9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */,
 				9F86F62A17C9BB7800D8F576 /* Supporting Files */,
@@ -684,6 +694,8 @@
 				9FCB47FC17C9EF400099AC5A /* UIToolbar+FlatUI.m in Sources */,
 				9FBD4AD017CAEB7F0069958D /* CustomAnnotation.m in Sources */,
 				9F5849E017CB9ADE0013F0D0 /* PlayViewController.m in Sources */,
+				9F59297217CE7C9A000310B4 /* ListViewController.m in Sources */,
+				9F59297517CE7F88000310B4 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
