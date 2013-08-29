@@ -79,9 +79,9 @@
 		9FC274C917CEE282009B36E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC274C817CEE282009B36E4 /* AVFoundation.framework */; };
 		9FC274CC17CEE30F009B36E4 /* doco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FC274CB17CEE30F009B36E4 /* doco.mp3 */; };
 		9FC274CE17CEE4A7009B36E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC274CD17CEE4A7009B36E4 /* AudioToolbox.framework */; };
-		9FC274D117CEF07C009B36E4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC274D017CEF07C009B36E4 /* TestViewController.m */; };
 		9FC274D717CF05E1009B36E4 /* demo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FC274D617CF05E1009B36E4 /* demo.mp3 */; };
 		9FC274D917CF06AE009B36E4 /* demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FC274D817CF06AE009B36E4 /* demo.jpg */; };
+		9FC274DB17CF1266009B36E4 /* pouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC274DA17CF1266009B36E4 /* pouse.png */; };
 		9FCB47C317C9EE020099AC5A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCB47C217C9EE020099AC5A /* CoreText.framework */; };
 		9FCB47EB17C9EF400099AC5A /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB47C817C9EF400099AC5A /* FUIAlertView.m */; };
 		9FCB47EC17C9EF400099AC5A /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCB47CA17C9EF400099AC5A /* FUIButton.m */; };
@@ -200,10 +200,9 @@
 		9FC274C817CEE282009B36E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9FC274CB17CEE30F009B36E4 /* doco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doco.mp3; sourceTree = "<group>"; };
 		9FC274CD17CEE4A7009B36E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		9FC274CF17CEF07C009B36E4 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		9FC274D017CEF07C009B36E4 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		9FC274D617CF05E1009B36E4 /* demo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = demo.mp3; sourceTree = "<group>"; };
 		9FC274D817CF06AE009B36E4 /* demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpg; sourceTree = "<group>"; };
+		9FC274DA17CF1266009B36E4 /* pouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouse.png; sourceTree = "<group>"; };
 		9FCB47C217C9EE020099AC5A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		9FCB47C617C9EF400099AC5A /* FlatUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIKit.h; sourceTree = "<group>"; };
 		9FCB47C717C9EF400099AC5A /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
@@ -358,6 +357,7 @@
 				9F86F63E17C9BB7800D8F576 /* MimpViewController.h */,
 				9F86F63F17C9BB7800D8F576 /* MimpViewController.m */,
 				9FBEDB2C17CC401A000AC750 /* MainStoryboard.storyboard */,
+				9FC274DC17CF1951009B36E4 /* co_logo */,
 				9F86F65517C9C16900D8F576 /* MapViewController.h */,
 				9F86F65617C9C16900D8F576 /* MapViewController.m */,
 				9FBEDB3D17CCAD15000AC750 /* Annotations */,
@@ -367,8 +367,6 @@
 				9F59297417CE7F88000310B4 /* XMLParser.m */,
 				9F5849DE17CB9ADE0013F0D0 /* PlayViewController.h */,
 				9F5849DF17CB9ADE0013F0D0 /* PlayViewController.m */,
-				9FC274CF17CEF07C009B36E4 /* TestViewController.h */,
-				9FC274D017CEF07C009B36E4 /* TestViewController.m */,
 				9FC274CA17CEE305009B36E4 /* music_source */,
 				9F86F62A17C9BB7800D8F576 /* Supporting Files */,
 			);
@@ -439,6 +437,7 @@
 		9FBEDB3017CC7D31000AC750 /* music */ = {
 			isa = PBXGroup;
 			children = (
+				9FC274DA17CF1266009B36E4 /* pouse.png */,
 				9F8BA18317CD1159003375D0 /* preview.png */,
 				9FBEDB3B17CC871D000AC750 /* volume.png */,
 				9FBEDB3717CC84BD000AC750 /* max.png */,
@@ -483,6 +482,13 @@
 				9FC274D817CF06AE009B36E4 /* demo.jpg */,
 			);
 			path = music_source;
+			sourceTree = "<group>";
+		};
+		9FC274DC17CF1951009B36E4 /* co_logo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = co_logo;
 			sourceTree = "<group>";
 		};
 		9FCB47C417C9EF400099AC5A /* Classes */ = {
@@ -693,6 +699,7 @@
 				9FC274CC17CEE30F009B36E4 /* doco.mp3 in Resources */,
 				9FC274D717CF05E1009B36E4 /* demo.mp3 in Resources */,
 				9FC274D917CF06AE009B36E4 /* demo.jpg in Resources */,
+				9FC274DB17CF1266009B36E4 /* pouse.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,7 +736,6 @@
 				9F5849E017CB9ADE0013F0D0 /* PlayViewController.m in Sources */,
 				9F59297217CE7C9A000310B4 /* ListViewController.m in Sources */,
 				9F59297517CE7F88000310B4 /* XMLParser.m in Sources */,
-				9FC274D117CEF07C009B36E4 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

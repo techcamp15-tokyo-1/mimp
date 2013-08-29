@@ -47,8 +47,12 @@ UISlider *slider_;
     NSString *filePath = [mainBundle pathForResource:@"demo" ofType:@"mp3"];
     NSURL *fileUrl  = [NSURL fileURLWithPath:filePath];
     
+    
+    
     NSError* error = nil;
     AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileUrl error:&error];
+    // 自動再生
+    [audioPlayer play];
     if(!error) {
         [audioPlayer prepareToPlay];
         [self setButtonAndSlider];
@@ -57,8 +61,7 @@ UISlider *slider_;
         NSLog(@"AVAudioPlayer Error");
     }
 
-    // ボタンが押されたら自動再生
-    [audioPlayer play];
+   
 }
 
 
@@ -96,7 +99,6 @@ UISlider *slider_;
         audioPlayer_.volume = volume;
         audioPlayer_.currentTime = 0;
         [audioPlayer_ play];
-        
         NSLog(@"volume: %f", volume);
     } else {
         [audioPlayer_ pause];
@@ -112,21 +114,29 @@ UISlider *slider_;
 
 - (void)setButtonAndSlider
 {
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame = CGRectMake(50, 50, 100, 50);
-    button.tag = 1;
-    [button setTitle:@"Start" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(buttonWasTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    if (audioPlayer_.isPlaying) {
+        UIImage *img    = [UIImage imageNamed:@"play.png"];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        button.frame = CGRectMake(123, 305, 74, 74);
+        button.tag = 1;
+        [button setBackgroundImage:img forState:UIControlStateNormal];
+        [button setTitle:@"" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(buttonWasTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:button];
+    } else { 
+        UIImage *img    = [UIImage imageNamed:@"pouse.png"];
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(123, 305, 74, 74);
+        button.tag = 2;
+        [button setBackgroundImage:img forState:UIControlStateNormal];
+        [button setTitle:@"" forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(buttonWasTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:button];
+    }
     
-    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button2.frame = CGRectMake(170, 50, 100, 50);
-    button2.tag = 2;
-    [button2 setTitle:@"Stop" forState:UIControlStateNormal];
-    [button2 addTarget:self action:@selector(buttonWasTapped:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button2];
     
-    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(50,150,220, 0)];
+    // 音量調整
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(40,375,230, 40)];
     slider.minimumValue = 0.0f;
     slider.maximumValue = 1.0f;
     slider.value = 0.5f;
@@ -134,5 +144,13 @@ UISlider *slider_;
     [slider addTarget:self action:@selector(sliderValueWasChanged:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:slider];
 }
+
+
+- (IBAction)nextSongButton:(id)sender {
+}
+
+- (IBAction)prevSongButton:(id)sender {
+}
+
 
 @end
