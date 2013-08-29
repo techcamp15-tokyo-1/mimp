@@ -16,11 +16,6 @@
 
 @implementation PlayViewController
 
-#pragma mark - Synthesizes
-
-@synthesize musicPlayer;
-
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,6 +24,9 @@
     }
     return self;
 }
+
+AVAudioPlayer *audioPlayer_;
+UISlider *slider_;
 
 - (void)viewDidLoad
 {
@@ -41,50 +39,43 @@
     // ナビゲーションタイトル設定
     self.navigationItem.title = @"Player";
     // タイトル
-    self.myTitleLabel.text  = @"Paradise";
+    self.myTitleLabel.text  = @"Tongue Tied(Remix)";
     // アーティスト名
-    self.myArtistLabel.text = @"Cldplay";
+    self.myArtistLabel.text = @"Groupove";
     
-    // 再生ボタン
-    UIImage *play = [UIImage imageNamed:@"play.png"];  // ボタンにする画像を生成する
-    // 停止ボタン
-    UIImage *stop= [UIImage imageNamed:@"next.png"];  // ボタンにする画像を生成する
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(700, 100, 74, 74)];  // ボタンのサイズを指定する
-    [btn setBackgroundImage:play forState:UIControlStateNormal];  // 画像をセットする
-    [btn setBackgroundImage:stop forState:UIControlStateHighlighted];  // 画像をセットする
-    // ボタンが押された時にhogeメソッドを呼び出す
-    [btn addTarget:self
-            action:@selector(hoge:) forControlEvents:UIControlEventTouchUpInside];
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    NSString *filePath = [mainBundle pathForResource:@"demo" ofType:@"mp3"];
+    NSURL *fileUrl  = [NSURL fileURLWithPath:filePath];
     
-    
-    musicPlayer = [MPMusicPlayerController iPodMusicPlayer];
-    
-    
-    [volumeSlider setValue:[musicPlayer volume]];
-    
-	if ([musicPlayer playbackState] == MPMusicPlaybackStatePlaying) {
-        
-        [playPauseButton setImage:[UIImage imageNamed:@"pauseButton.png"] forState:UIControlStateNormal];
-        
+    NSError* error = nil;
+    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileUrl error:&error];
+    if(!error) {
+        [audioPlayer prepareToPlay];
+        [self setButtonAndSlider];
+        audioPlayer_ = audioPlayer;
     } else {
-        
-        [playPauseButton setImage:[UIImage imageNamed:@"playButton.png"] forState:UIControlStateNormal];
+        NSLog(@"AVAudioPlayer Error");
     }
+
+    // ボタンが押されたら自動再生
+    [audioPlayer play];
 }
 
 
-
-
-
+/**
+  * ナビゲーションバー デザイン関連
+  *
+  */
 -(void)viewWillAppear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
-// ナビゲーションバー非表示
 -(void)viewWillDisappear:(BOOL)animated
 {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -92,35 +83,56 @@
     // Dispose of any resources that can be recreated.
 }
 
-// 前の曲へ
-- (IBAction)previousSong:(id)sender
+/**
+  *
+  * 音楽再生関連
+  * 
+  *
+  */
+- (void)buttonWasTapped:(UIButton *)button
 {
-    [musicPlayer skipToPreviousItem];
-}
-
-//　音楽再生
-- (IBAction)playSong:(id)sender
-{
-    if ([musicPlayer playbackState] == MPMusicPlaybackStatePlaying) {
-        [musicPlayer pause];
+    if (button.tag == 1) {
+        float volume = slider_.value;
+        audioPlayer_.volume = volume;
+        audioPlayer_.currentTime = 0;
+        [audioPlayer_ play];
         
+        NSLog(@"volume: %f", volume);
     } else {
-        [musicPlayer play];
-        
+        [audioPlayer_ pause];
     }
 }
 
-// 次の曲へ
-- (IBAction)nextSong:(id)sender
+- (void)sliderValueWasChanged:(UISlider *)slider
 {
-    [musicPlayer skipToNextItem];
+    if (audioPlayer_) {
+        audioPlayer_.volume = slider.value;
+    }
 }
 
-// 音量調整
-- (IBAction)volumeChanged:(id)sender {
-    [musicPlayer setVolume:[volumeSlider value]];
+- (void)setButtonAndSlider
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(50, 50, 100, 50);
+    button.tag = 1;
+    [button setTitle:@"Start" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonWasTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    UIButton *button2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button2.frame = CGRectMake(170, 50, 100, 50);
+    button2.tag = 2;
+    [button2 setTitle:@"Stop" forState:UIControlStateNormal];
+    [button2 addTarget:self action:@selector(buttonWasTapped:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button2];
+    
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(50,150,220, 0)];
+    slider.minimumValue = 0.0f;
+    slider.maximumValue = 1.0f;
+    slider.value = 0.5f;
+    slider_ = slider;
+    [slider addTarget:self action:@selector(sliderValueWasChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:slider];
 }
-
-
 
 @end
